@@ -1,4 +1,7 @@
 /* Tags: */
+body {
+    position: relative !important;
+}
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
@@ -6,30 +9,18 @@ h1 {
 
 h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:40px;
+    font-size:35px;
 }
 
 h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:30px;
-    color: darkgrey;
-}
-
-h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color: darkgrey;
-}
-
-h5 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    color: darkgrey;
+    color: #545454;
 }
 
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 /* Classes: */
@@ -38,11 +29,11 @@ p {
     padding-bottom: 5px;
     border: 0 solid black;
     border-radius: 0;
-    margin: 0px;
+    margin-bottom: 0;
 }
 
 .header {
-    padding-top: 70px;
+    padding-top: 105px;
     padding-bottom: 70px;
     background-color: #1abc9c;
     color: white;
@@ -53,6 +44,7 @@ p {
     padding-top: 35px;
     padding-bottom: 35px;
 }
+
 .normalized {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -81,4 +73,8 @@ p {
 .about li > a:hover {
     background-color: #545454;
     color: white;
+}
+
+.about li > a::selection {
+    background-color: white;
 }

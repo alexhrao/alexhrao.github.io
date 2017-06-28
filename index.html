@@ -9,34 +9,41 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="resources/scripts/documentReady.js"></script>
+        <style>
+            body {
+                position: relative; 
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation Bar -->
-        <div class="navbar navbar-inverse">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="https://github.com/alexhrao">Alexander Rao</a>
                 </div>
-                <ul class="nav navbar-nav" id="theNavbar">
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-fire"></span> Passions</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Projects</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a></li>
-                </ul>
+                <div id="menuBar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#aboutMe"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
+                        <li><a href="#passions"><span class="glyphicon glyphicon-fire"></span> Passions</a></li>
+                        <li><a href="#professional"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a></li>
+                        <li><a href="#projects"><span class="glyphicon glyphicon-tasks"></span> Projects</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#email"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+                        <li><a href="#social"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
 
         <!-- Header -->
-        <div class="container-fluid header text-center">
+        <div id="aboutMe" class="container-fluid header text-center">
             <img src="resources/images/ProfSeniorPic.jpg" class="img-circle img-responsive" style="display:inline" alt="Me">
             <h1>Welcome. I'm Glad You're Here.</h1>
         </div>
@@ -44,7 +51,7 @@
         <div class="container-fluid">
             <!-- About Me -->
             <div class="row about content">
-                <div class="col-lg-12" id="aboutMe">
+                <div class="col-lg-12">
                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#intro">Me</a></li>
                         <li><a data-toggle="tab" href="#basics">Basics</a></li>
@@ -53,9 +60,17 @@
                     <div class="tab-content">
                         <div id="intro" class="tab-pane fade in active">
                             <h1>Me!</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies ante tincidunt condimentum pulvinar. Fusce eget ipsum vitae magna viverra blandit. Nullam auctor sapien nec purus auctor, vel facilisis felis lobortis. Nam erat orci, venenatis id hendrerit id, ultricies ut elit. Vestibulum mollis diam ex, ut elementum purus ornare laoreet. Ut eleifend sapien non pulvinar imperdiet. Cras ac quam viverra, tempor massa sit amet, cursus sem. Morbi molestie sagittis dignissim.
+                                Vivamus in nulla eget turpis interdum semper. Cras scelerisque urna non elit semper, at fermentum tortor sollicitudin. Vestibulum eget tincidunt mi, sit amet elementum erat. Nunc at justo vel nunc scelerisque ullamcorper ut id tellus. Integer varius lectus at ultrices faucibus. Vivamus fermentum posuere porta. Sed congue tortor diam, ac ultricies velit pulvinar at. Sed libero purus, commodo eu dolor ac, vulputate accumsan eros. Curabitur in gravida arcu, vel vestibulum sem. Nunc ultrices odio eu quam rhoncus euismod.
+                                Praesent tincidunt turpis et nunc malesuada, at pulvinar eros ullamcorper. Vivamus vehicula accumsan lacus, et egestas dui lacinia malesuada. Aliquam bibendum eros dui. Ut consectetur diam non magna ultrices ultrices. In hac habitasse platea dictumst. Nullam elementum aliquet efficitur. Vestibulum imperdiet ultricies ante eu vulputate. Vivamus ac risus tortor. Aliquam eu rutrum tellus. Mauris vulputate lacus ac lacus tincidunt efficitur. Curabitur auctor est ac arcu mollis semper. Ut vitae turpis quis lacus sollicitudin commodo sit amet ut sem. Mauris varius maximus nisi, nec aliquet neque ornare nec. Donec sed sem condimentum, porttitor lacus nec, viverra enim. Nulla ultrices, lacus ac mollis suscipit, sapien odio suscipit velit, ac interdum neque odio id neque. Ut ac erat non lorem dignissim pharetra et non velit.
+                                Phasellus placerat ex at erat porta, in varius quam vestibulum. Vivamus non risus vel neque pulvinar tempor a vitae sem. Donec eleifend nisi sed sem dictum malesuada. Fusce nec ultrices justo, ut lacinia libero. Morbi laoreet id libero sed rhoncus. Nam vitae augue ultrices, euismod leo ac, sagittis lectus. Nunc erat ante, molestie at pellentesque eget, malesuada non tellus. Nullam in tortor sed diam ultricies feugiat eget at justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer gravida rutrum congue. Phasellus nec euismod ante. Maecenas placerat eros id vulputate luctus. Quisque quis velit non tellus pulvinar vulputate.
+                                Donec ac neque sed nisi facilisis sagittis. Duis justo turpis, elementum id est quis, auctor ultrices magna. Vestibulum malesuada lacinia ligula id bibendum. Curabitur id aliquet nunc, ut euismod lacus. Mauris tempus gravida nisi nec posuere. Proin ante massa, tincidunt imperdiet consequat ac, bibendum a nisl. Suspendisse ut justo eget est venenatis consectetur eu eu odio. Ut ultrices sit amet tortor at suscipit.
+                            </p>
                         </div>
                         <div id="basics" class="tab-pane fade in">
                             <h1>The Basics</h1>
+                            <p>Hello there!</p>
                         </div>
                         <div id="history" class="tab-pane fade in">
                             <h1>My History</h1>
@@ -63,22 +78,74 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="passions" class="container-fluid">
             <!-- Passions -->
             <div class="row passions content">
-                <div class="col-lg-12" id="passions">
+                <div class="col-md-4 text-center">
+                    <span style="font-size:2.5em" class="glyphicon glyphicon-hdd"></span>
+                    <h2>Software Engineering</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies ante tincidunt condimentum pulvinar. Fusce eget ipsum vitae magna viverra blandit. Nullam auctor sapien nec purus auctor, vel facilisis felis lobortis. Nam erat orci, venenatis id hendrerit id, ultricies ut elit. Vestibulum mollis diam ex, ut elementum purus ornare laoreet. Ut eleifend sapien non pulvinar imperdiet. Cras ac quam viverra, tempor massa sit amet, cursus sem. Morbi molestie sagittis dignissim.
+                        Vivamus in nulla eget turpis interdum semper. Cras scelerisque urna non elit semper, at fermentum tortor sollicitudin. Vestibulum eget tincidunt mi, sit amet elementum erat. Nunc at justo vel nunc scelerisque ullamcorper ut id tellus. Integer varius lectus at ultrices faucibus. Vivamus fermentum posuere porta. Sed congue tortor diam, ac ultricies velit pulvinar at. Sed libero purus, commodo eu dolor ac, vulputate accumsan eros. Curabitur in gravida arcu, vel vestibulum sem. Nunc ultrices odio eu quam rhoncus euismod.
+                        Praesent tincidunt turpis et nunc malesuada, at pulvinar eros ullamcorper. Vivamus vehicula accumsan lacus, et egestas dui lacinia malesuada. Aliquam bibendum eros dui. Ut consectetur diam non magna ultrices ultrices. In hac habitasse platea dictumst. Nullam elementum aliquet efficitur. Vestibulum imperdiet ultricies ante eu vulputate. Vivamus ac risus tortor. Aliquam eu rutrum tellus. Mauris vulputate lacus ac lacus tincidunt efficitur. Curabitur auctor est ac arcu mollis semper. Ut vitae turpis quis lacus sollicitudin commodo sit amet ut sem. Mauris varius maximus nisi, nec aliquet neque ornare nec. Donec sed sem condimentum, porttitor lacus nec, viverra enim. Nulla ultrices, lacus ac mollis suscipit, sapien odio suscipit velit, ac interdum neque odio id neque. Ut ac erat non lorem dignissim pharetra et non velit.
+                        Phasellus placerat ex at erat porta, in varius quam vestibulum. Vivamus non risus vel neque pulvinar tempor a vitae sem. Donec eleifend nisi sed sem dictum malesuada. Fusce nec ultrices justo, ut lacinia libero. Morbi laoreet id libero sed rhoncus. Nam vitae augue ultrices, euismod leo ac, sagittis lectus. Nunc erat ante, molestie at pellentesque eget, malesuada non tellus. Nullam in tortor sed diam ultricies feugiat eget at justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer gravida rutrum congue. Phasellus nec euismod ante. Maecenas placerat eros id vulputate luctus. Quisque quis velit non tellus pulvinar vulputate.
+                        Donec ac neque sed nisi facilisis sagittis. Duis justo turpis, elementum id est quis, auctor ultrices magna. Vestibulum malesuada lacinia ligula id bibendum. Curabitur id aliquet nunc, ut euismod lacus. Mauris tempus gravida nisi nec posuere. Proin ante massa, tincidunt imperdiet consequat ac, bibendum a nisl. Suspendisse ut justo eget est venenatis consectetur eu eu odio. Ut ultrices sit amet tortor at suscipit.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span style="font-size:2.5em" class="glyphicon glyphicon-signal"></span>
+                    <h2>Data Analytics</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span style="font-size:2.5em" class="glyphicon glyphicon-cloud"></span>
+                    <h2>Embedded Systems &amp; IoT</h2>
                 </div>
             </div>
-
-
-
-            <!-- Passions -->
-            <div class="row">
-                <div class="col-xs-12 col-md-3">
-
-
-
         </div>
+        <div id="professional" class="container-fluid">
+            <!-- Professional Experience -->
+            <div class="row professional content">
+                <div class="col-lg-12">
+                    <div id="companies" class="carousel slide text-center" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#companies" data-slide-to="0" class="active"></li>
+                            <li data-target="#companies" data-slide-to="1"></li>
+                            <li data-target="#companies" data-slide-to="2"></li>
+                        </ol>
 
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="resources/images/ProfSeniorPic.jpg" class="img-circle img-responsive" style="display:inline" alt="Me">
+                                <div class="carousel-caption">
+                                    
+                                </div>
+                            </div>
 
+                            <div class="item">
+                                <img src="resources/images/ProfSeniorPic.jpg" class="img-circle img-responsive" style="display:inline" alt="Me">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="resources/images/ProfSeniorPic.jpg" class="img-circle img-responsive" style="display:inline" alt="Me">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#companies" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>>
+                        </a>
+                        <a class="right carousel-control" href="#companies" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
