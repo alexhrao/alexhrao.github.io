@@ -1,361 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<!<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Personal Website!</title>
+        <title>My Personal Website</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/css/header.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip(); 
-            });
-            $(document).ready(function(){
-                $('[data-toggle="popover"]').popover(); 
-            });
-        </script>
+        <script src="resources/scripts/documentReady.js"></script>
+        <style type="text/css">
+            .content {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            .main {
+                background-color: #1abc9c;
+                color: white;
+                border: 0px;
+            }
+
+        </style>
     </head>
     <body>
-        <div class="alert alert-success alert-dismissable fade in">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong>Success!</strong> Indicates a successful or positive action.
-        </div>
-        <nav class="navbar navbar-inverse">
+        <!-- Navigation Bar -->
+        <div class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="https://github.com/alexhrao">Alexander Rao</a>
                 </div>
-                <ul class="nav navbar-nav" id="myNavbar">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
+                <ul class="nav navbar-nav" id="theNavbar">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-fire"></span> Passions</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Projects</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a></li>
                 </ul>
             </div>
-        </nav>
-        <!-- Container -->
-        <div class="container">
-            <!-- Buttons -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="btn-group btn-group-lg">
-                        <button type="button" class="btn btn-primary"><!-- Glyphicon --><span class="glyphicon glyphicon-user"></span> About Me</button>
-                        <div class="btn-group btn-group-lg">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                                My Projects <span class="badge">2</span> <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li class="dropdown-header">Tablets:</li>
-                                <li><a href="#">Tablet <span class="label label-warning">Sup</span></a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Phone</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-danger">Contact</button>
-                    </div>
-
-                    <button class="btn btn-warning" data-toggle="collapse" data-target="#projects">View Projects</button>
-                    <div id="projects" class="collapse">
-                        Hello World!
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                &nbsp;
-            </div>
-
-            <div class="row">
-                <div class="col-md-10 col-lg-6">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#menu1">Home</a></li>
-                        <li><a data-toggle="tab" href="#menu2">Other</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="menu1" class="tab-pane fade in active">
-                            <h1>About Me</h1>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                            <h2>Projects</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 col-lg-6">
-                    <ul class="nav nav-pills">
-                        <li class="active"><a data-toggle="pill" href="#menu1P">Home</a></li>
-                        <li><a data-toggle="pill" href="#menu2P">Other</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="menu1P" class="tab-pane fade in active">
-                            <h1>About Me with Pill</h1>
-                        </div>
-                        <div id="menu2P" class="tab-pane fade">
-                            <h2>Projects with Pill</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-group">
-                &nbsp;
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="control-label col-sm-2 sr-only" for="email">Email:</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2 sr-only" for="pwd">Password:</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-danger">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                            70%<span class="sr-only">70% Complete</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <ul class="pagination">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-            </ul>
-            <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Private</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-            <ul class="pager">
-                <li class="previous"><a href="#">Previous Project</a></li>
-                <li class="next"><a href="#">Next Project</a></li>
-            </ul>
-
-            <ul class="list-group">
-                <li class="list-group-item">New <span class="badge">12</span></li>
-                <li class="list-group-item">Old <span class="badge">14</span></li>
-                <li class="list-group-item active">Active! <span class="badge">16</span></li>
-            </ul>
-
-            <div class="panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><h1>Hello World!</h1></div>
-                    <div class="panel-body"><p>goodbye</p></div>
-                    <div class="panel-footer"><p>what</p></div>
-                </div>
-                <div class="panel panel-danger">
-                    <div class="panel-heading">Content</div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <label for="usr">Name:</label>
-                        <input type="text" class="form-control" id="usr">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-4">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" class="form-control" id="phone">
-                        </div>
-                        <div class="col-sm-4">
-                            <label for="birth">DOB</label>
-                            <input type="date" class="form-control" id="birth">
-                        </div>
-                        <div class="col-sm-4">
-                            <label for="mail">Email:</label>
-                            <input type="email" class="form-control" id="mail">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-3">
-                            <label for="internet">URL:</label>
-                            <input type="url" class="form-control" id="internet">
-                        </div>
-                        <div class="col-sm-3">
-                            <label for="srch">Search:</label>
-                            <input type="search" class="form-control" id="srch">
-                        </div>
-                        <div class="col-sm-1">
-                            <label for="clr">Color:</label>
-                            <input type="color" class="form-control" id="clr">
-                        </div>
-                        <div class="col-sm-5">
-                            <label for="wk">Week:</label>
-                            <input type="week" class="form-control" id="wk">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                            <label for="inp">Input:</label>
-                            <textarea class="form-control" rows="10" id="inp"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <div class="checkbox">
-                                <label><input type="checkbox" value="">Option 1</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" value="" disabled>Option 2</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="radio">
-                                <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
-                                <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <label for="sel">Select:</label>
-                            <select class="form-control" id="sel">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-6">
-                            <form>
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input id="email" type="email" class="form-control" name="mail" id="mail" placeholder="Email">
-                                </div>
-                                <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="Search">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Focused!</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" id="focusedInput" type="text" value="ClickMe!">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd2" class="col-sm-2 control-label">Disabled</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" id="pwd2" type="password" disabled>
-                            </div>
-                        </div>
-                        <div class="form-group has-success has-feedback">
-                            <label for="successText" class="col-sm-2 control-label">Success!</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" id="successText" type="text">
-                                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-                                <span class="help-block">Helper Text!...</span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Faust_bei_der_Arbeit.JPG/1920px-Faust_bei_der_Arbeit.JPG">
-                        <div class="carousel-caption">
-                            <h3>New York</h3>
-                            <p>Love you guys!</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Faust_bei_der_Arbeit.JPG/1920px-Faust_bei_der_Arbeit.JPG">
-                    </div>
-                    <div class="item">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Faust_bei_der_Arbeit.JPG/1920px-Faust_bei_der_Arbeit.JPG">
-                    </div>
-                </div>
-
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open MsgBox</button>
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" data-toggle="tooltip" data-placement="auto top" title="WAZZUP">&times;</button>
-                            <h4 class="modal-title" data-toggle="popover" title="PopHead!" data-content="some content!" data-placement="auto left" data-trigger="hover">Important!</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Note this note please!</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Table -->
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Hello!</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Hello World!</td>
-                            </tr>
-                            <tr>
-                                <td>Wassup</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
+
+        <!-- Content -->
+        <div class="container-fluid main content text-center">
+            <img src="resources/images/ProfSeniorPic.jpg" class="img-circle" alt="Me" width="398" height="398">
+            <h1>Welcome. I'm Glad You're Here.</h1>
+        </div>
+
+        <div class="container content">
+            <!-- About Me -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toogle="tab" href="#intro">Me</a></li>
+                        <li><a data-toggle="tab" href="#basics">Basics</a></li>
+                        <li><a data-toggle="tab" href="#history">History</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="intro" class="tab-pane fade in active">
+                            <h1>Me!</h1>
+                        </div>
+                        <div id="basics" class="tab-pane fade in">
+                            <h1>The Basics</h1>
+                        </div>
+                        <div id="history" class="tab-pane fade in">
+                            <h1>My History</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Passions -->
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+
+
+
+        </div>
+
+
     </body>
 </html>
