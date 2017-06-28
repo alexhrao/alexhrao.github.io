@@ -30,7 +30,6 @@ h5 {
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    color: black;
 }
 
 /* Classes: */
@@ -42,17 +41,44 @@ p {
     margin: 0px;
 }
 
-.content {
+.header {
     padding-top: 70px;
     padding-bottom: 70px;
+    background-color: #1abc9c;
+    color: white;
+    border: 0px;
 }
 
+.content {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
 .normalized {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.about a {
-    color: black;
+.about {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #545454;
+    color: white;
 }
 
 /* ID: */
+
+/* Combinations: */
+.about ul {
+    background-color: #545454;
+}
+
+.about li > a {
+    background-color: #232222;
+    color: white;
+    border: 1px solid white;
+}
+
+.about li.active > a,
+.about li.active > a:focus,
+.about li > a:hover {
+    background-color: #545454;
+    color: white;
+}

@@ -9,18 +9,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="resources/scripts/documentReady.js"></script>
-        <style type="text/css">
-            .content {
-                padding-top: 70px;
-                padding-bottom: 70px;
-            }
-            .main {
-                background-color: #1abc9c;
-                color: white;
-                border: 0px;
-            }
-
-        </style>
     </head>
     <body>
         <!-- Navigation Bar -->
@@ -47,18 +35,18 @@
             </div>
         </div>
 
-        <!-- Content -->
-        <div class="container-fluid main content text-center">
+        <!-- Header -->
+        <div class="container-fluid header text-center">
             <img src="resources/images/ProfSeniorPic.jpg" class="img-circle img-responsive" style="display:inline" alt="Me">
             <h1>Welcome. I'm Glad You're Here.</h1>
         </div>
-
+        <!-- Content -->
         <div class="container-fluid">
             <!-- About Me -->
-            <div class="row">
-                <div class="col-lg-12 about">
+            <div class="row about content">
+                <div class="col-lg-12" id="aboutMe">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#intro"><p>Me</p></a></li>
+                        <li class="active"><a data-toggle="tab" href="#intro">Me</a></li>
                         <li><a data-toggle="tab" href="#basics">Basics</a></li>
                         <li><a data-toggle="tab" href="#history">History</a></li>
                     </ul>
@@ -75,6 +63,13 @@
                     </div>
                 </div>
             </div>
+            <!-- Passions -->
+            <div class="row passions content">
+                <div class="col-lg-12" id="passions">
+                </div>
+            </div>
+
+
 
             <!-- Passions -->
             <div class="row">
