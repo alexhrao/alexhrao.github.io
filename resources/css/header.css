@@ -173,3 +173,9 @@ p {
     margin-top:30px;
     color: #1D3462;
 }
+
+.projects img {
+    max-width: 15%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
