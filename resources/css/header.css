@@ -78,6 +78,10 @@ p {
 }
 .about h3 {
     text-indent: 20px;
+};
+
+.about .col-xs-12 {
+    margin-bottom: 30px;
 }
 
 .about img.hidden-xs {
@@ -106,7 +110,10 @@ p {
     margin-right: 1.5%;
 }
 /* ID: */
-
+#imgScouts {
+    max-width: 15%;
+    margin-right: 15px;
+}
 /* Combinations: */
 .about ul {
     background-color: #545454;
