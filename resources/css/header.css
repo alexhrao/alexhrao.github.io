@@ -65,30 +65,6 @@ p {
     color: white;
 }
 
-.about p {
-    text-indent: 30px;
-}
-
-.about h1 {
-    font-style: italic;
-}
-
-.about h2 {
-    text-indent: 10px;
-}
-.about h3 {
-    text-indent: 20px;
-};
-
-.about .col-xs-12 {
-    margin-bottom: 30px;
-}
-
-.about img.hidden-xs {
-    max-width: 5%;
-    margin-right: 15px;
-}
-
 .passions {
     background-color: #9FD5F0;
 }
@@ -101,11 +77,11 @@ p {
 }
 
 .professional {
-    background-color: #F4AC75;
+    background-color: #DF75F4;
 }
 
 .projects {
-    background-color: #DF75F4;
+    background-color: #F4AC75;
 }
 
 .social {
@@ -143,5 +119,47 @@ p {
 }
 
 .about li > a::selection {
+    background-color: white;
+}
+
+.about p {
+    text-indent: 30px;
+}
+
+.about h1 {
+    font-style: italic;
+}
+
+.about h2 {
+    text-indent: 10px;
+}
+.about h3 {
+    text-indent: 20px;
+};
+
+.about .col-xs-12 {
+    margin-bottom: 30px;
+}
+
+.about img.hidden-xs {
+    max-width: 5%;
+    margin-right: 15px;
+}
+
+.projects .nav-pills > li > a {
+    background-color: #6AC860;
+    color: black;
+    border: 1px solid white;
+}
+
+.projects .nav-pills > li.active > a,
+.projects .nav-pills > li.active > a:focus,
+.projets .nav-pills > li.active > a:hover,
+.projects li > a:hover {
+    background-color: #5670A3;
+    color: black;
+}
+
+.projects li > a::selection {
     background-color: white;
 }
