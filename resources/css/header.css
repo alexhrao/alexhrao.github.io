@@ -163,3 +163,13 @@ p {
 .projects li > a::selection {
     background-color: white;
 }
+
+.projects li p {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.projects .tab-content {
+    margin-top:30px;
+    color: #1D3462;
+}
