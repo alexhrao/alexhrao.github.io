@@ -69,15 +69,8 @@ p {
     background-color: #9FD5F0;
 }
 
-.passions p {
-    text-indent: 2.0em;
-    text-align: left;
-    padding-left: 7%;
-    padding-right: 7%;
-}
-
 .professional {
-    background-color: #DF75F4;
+    background-color: #8EC86C;
 }
 
 .projects {
@@ -86,12 +79,6 @@ p {
 
 .social {
     background-color: #222;
-}
-
-.social-icons i {
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    font-size: 48px;
 }
 
 /* ID: */
@@ -146,6 +133,17 @@ p {
     margin-right: 15px;
 }
 
+.passions p {
+    text-indent: 2.0em;
+    text-align: left;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.professional img {
+    max-width: 15%;
+}
+
 .projects .nav-pills > li > a {
     background-color: #6AC860;
     color: black;
@@ -178,4 +176,10 @@ p {
     max-width: 17.5%;
     margin-right: 15px;
     margin-bottom: 10px;
+}
+
+.social-icons i {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    font-size: 48px;
 }
