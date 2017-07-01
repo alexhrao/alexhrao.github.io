@@ -93,6 +93,13 @@ p {
     background-color: #9FD5F0;
 }
 
+.passions p {
+    text-indent: 2.0em;
+    text-align: left;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 .professional {
     background-color: #F4AC75;
 }
@@ -108,12 +115,15 @@ p {
 .social-icons i {
     margin-left: 1.5%;
     margin-right: 1.5%;
+    font-size: 48px;
 }
+
 /* ID: */
 #imgScouts {
     max-width: 15%;
     margin-right: 15px;
 }
+
 /* Combinations: */
 .about ul {
     background-color: #545454;
