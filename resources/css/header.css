@@ -70,13 +70,6 @@ footer {
     background-color: #222;
     color: white;
 }
-a {
-    color: white;
-    text-decoration: underline;
-}
-a:hover {
-    color: #B5B4B4;
-}
 
 /* Classes: */
 .navbar-inverse {
@@ -158,7 +151,14 @@ a:hover {
 }
 .about h3 {
     text-indent: 20px;
-};
+}
+.about a {
+    color: white;
+    text-decoration: underline;
+}
+.about a:hover {
+    color: #B5B4B4;
+}
 .about .col-xs-12 {
     margin-bottom: 30px;
 }
@@ -171,6 +171,14 @@ a:hover {
     text-align: left;
     padding-left: 7%;
     padding-right: 7%;
+}
+.passions a {
+    color: #FF805E;
+    text-decoration: underline;
+}
+.passions a:hover {
+    color: #C03A17;
+    text-decoration: underline;
 }
 .professional img {
     max-width: 50%;
