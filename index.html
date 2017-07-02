@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>My Personal Website</title>
+        <link rel="shortcut icon" href="resources/images/favicon.ico" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="resources/css/header.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">\
+        <link rel="stylesheet" href="resources/css/header.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="resources/scripts/onReady.js"></script>
@@ -47,6 +49,7 @@
         <div class="container-fluid">
             <!-- About Me -->
             <div class="row about content">
+                <h1 class="text-center head">Yours Truly</h1>
                 <div class="col-lg-12">
                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#intro">Me</a></li>
@@ -141,6 +144,7 @@
         <div id="passions" class="container-fluid">
             <!-- Passions -->
             <div class="row passions content">
+                <h1 class="text-center head">Passions</h1>
                 <div class="col-md-6 text-center">
                     <span style="font-size:2.5em" class="glyphicon glyphicon-hdd"></span>
                     <h2>Software Engineering</h2>
@@ -160,42 +164,55 @@
         <!-- Professional Experience -->
         <div id="professional" class="container-fluid">
             <div class="row professional content text-center">
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/southernCo.png" class="img-responsive"/>
+                <h1 class="text-center head">Experience</h1>
+                <div class="row professional content text-center">
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/southernCo.png" class="img-responsive"/>
+                        <p>
+                            This is where I currently work, as a Cooperative Education employee (Co Op). For my first rotation, I worked in Transmission Planning East, which was chiefly responsible for making sure that Georgians can expect reliable power at all times. As it turns out, this is quite a bit more difficult than it looks - and it already looks challenging.
+                        </p>
+                        <p>
+                            Here, I helped improve efficiency by improving the already-existing technologies. For example, I created a form in Microsoft&trade; Access that allows users to automatically enter in new "contingency events." This dramatically reduced the precent error, since before my program, the process had been completely done by hand.
+                        </p>
+                        <p>
+                            Also, I was responsible for adding new reports, such as reports showing historical project plans, and how they've changed over time. The report is intuitive, easy to use, and completely interactive.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/mathWorks.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/thg.png" class="img-responsive"/>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/mathWorks.png" class="img-responsive"/>
+                <div class="row professional content text-center">
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/georgiaTech.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/experianHealth.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/chickasaw.png" class="img-responsive"/>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/thg.png" class="img-responsive"/>
-                </div>
-            </div>
-            <div class="row professional content text-center">
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/georgiaTech.png" class="img-responsive"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/experianHealth.png" class="img-responsive"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/chickasaw.png" class="img-responsive"/>
-                </div>
-            </div>
-            <div class="row professional content text-center">
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/stinnettAssociates.png" class="img-responsive"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/mathnasium.png" class="img-responsive"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="resources/images/companies/tulsaUniversity.png" class="img-responsive"/>
+                <div class="row professional content text-center">
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/stinnettAssociates.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/mathnasium.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="resources/images/companies/tulsaUniversity.png" class="img-responsive"/>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Projects -->
         <div id="projects" class="container-fluid">
             <div class="row projects content">
+                <h1 class="text-center head">Projects</h1>
                 <div class="col-sm-3">
                     <!-- Pills -->
                     <div class="text-center">
@@ -260,11 +277,15 @@
                     <a href="https://www.facebook.com/alex.rao.731"><i class="fa fa-facebook-square" style="color:#3b5998"></i></a>
                     <a href="https://www.github.com/alexhrao"><i class="fa fa-github" style="color:#ffffff"></i></a>
                     <a href="https://plus.google.com/115896805519361126811"><i class="fa fa-google-plus" style="color:#dd4b39"></i></a>
+                    <a href="https://www.instagram.com/alexhrao/"><i class="fa fa-instagram" style="color: #8a3ab9"></i></a>
                     <a href="https://www.linkedin.com/in/alexander-rao-93b252104"><i class="fa fa-linkedin-square" style="color:#007bb6"></i></a>
+                    <a href="https://www.pinterest.com/arodponyboy678"><i class="fa fa-pinterest-square" style="color: #cb2027"></i></a>
                     <a href="https://www.quora.com/profile/Alexander-Rao"><i class="fa fa-quora" style="color:#a82400"></i></a>
+                    <a href="https://www.reddit.com/user/ArodPonyboy/"><i class="fa fa-reddit-square" style="color:#ff4500"></i></a>
                     <a href="https://www.snapchat.com/add/alexhrao/"><i class="fa fa-snapchat-square" style="color: #fffc00"></i></a>
                     <a href="https://arodponyboy678.tumblr.com"><i class="fa fa-tumblr-square" style="color:#32506d"></i></a>
                     <a href="https://twitter.com/arodponyboy/"><i class="fa fa-twitter-square" style="color:#4099FF"></i></a>
+                    <a href="https://account.xbox.com/en-US/Profile?gamerTag=ArodPonyboy678"><i class="ion-xbox" style="color:#107c10"></i></a>
                     <a href="https://www.youtube.com/channel/UCLsj-_lp-GVb7PZ1I671NsQ"><i class="fa fa-youtube-play" style="color:#bb0000"></i></a>
                 </div>
             </div>

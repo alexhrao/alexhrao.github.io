@@ -78,12 +78,18 @@ footer {
     border-radius: 0;
     margin-bottom: 0;
 }
+.header h1,
 .header {
+    font-size: 85px;
     padding-top: 105px;
     padding-bottom: 70px;
     background-color: #1abc9c;
     color: white;
     border: 0px;
+}
+.head {
+    font-size: 65px;
+    margin-bottom: 50px;
 }
 .content {
     padding-top: 35px;
