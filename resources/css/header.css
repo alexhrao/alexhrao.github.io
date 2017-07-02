@@ -70,6 +70,10 @@ footer {
     background-color: #222;
     color: white;
 }
+a {
+    color: white;
+    text-decoration: underline;
+}
 
 /* Classes: */
 .navbar-inverse {
