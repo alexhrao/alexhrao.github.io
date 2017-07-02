@@ -81,7 +81,6 @@ footer {
 }
 .header h1,
 .header {
-    font-size: 80px;
     padding-top: 105px;
     padding-bottom: 70px;
     background-color: #1abc9c;
@@ -89,7 +88,6 @@ footer {
     border: 0px;
 }
 .head {
-    font-size: 65px;
     margin-bottom: 50px;
 }
 .content {
