@@ -170,6 +170,11 @@ footer {
     display: inline;
     margin: 15px;
 }
+.professional li {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
 .projects .nav-pills > li > a {
     background-color: #6AC860;
     color: black;
