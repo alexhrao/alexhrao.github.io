@@ -74,6 +74,9 @@ a {
     color: white;
     text-decoration: underline;
 }
+a:hover {
+    color: #B5B4B4;
+}
 
 /* Classes: */
 .navbar-inverse {
