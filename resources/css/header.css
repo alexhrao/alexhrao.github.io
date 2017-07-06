@@ -128,12 +128,15 @@ footer {
     background-color: #232222;
     color: white;
     border: 1px solid white;
+    text-decoration: none;
 }
 .about li.active > a,
 .about li.active > a:focus,
+.about li.active > a:hover,
 .about li > a:hover {
     background-color: #545454;
     color: white;
+    text-decoration: underline;
 }
 .about li > a::selection {
     background-color: white;
