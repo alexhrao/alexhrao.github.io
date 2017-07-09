@@ -12,4 +12,15 @@ $(document).ready(function() {
             });
         }
     });
+    $('#logoName').hide();
+    $('#logo').hover(
+        function() {
+            $('#logoImage').hide();
+            $('#logoName').fadeIn('fast');
+        },
+        function() {
+            $('#logoName').hide();
+            $('#logoImage').fadeIn('fast');
+        }
+    );
 });
