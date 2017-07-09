@@ -172,13 +172,14 @@
         <div id="professional" class="container-fluid">
             <div class="row professional content text-center">
                 <h1 class="text-center head">Experience</h1>
+                <h5>Click on any company to learn more about my experience there</h5>
             </div>
             <div class="row professional content text-center">
                 <div class="col-sm-4">
                     <a href="#southernCo" data-toggle="collapse">
                         <img src="resources/images/companies/southernCo.png" class="img-responsive" style="max-width: 95%"/>
                     </a>
-                    <div id="southernCo" class="collapse fade in active">
+                    <div id="southernCo" class="collapse fade">
                         <p>
                             This is where I currently work, as a Cooperative Education employee (Co Op). For my first rotation, I worked in Transmission Planning East, which was chiefly responsible for making sure that Georgians can expect reliable power at all times. As it turns out, this is quite a bit more difficult than it looks - and it already looks challenging.
                         </p>
@@ -194,7 +195,7 @@
                     <a href="#mathWorks" data-toggle="collapse">
                         <img src="resources/images/companies/mathWorks.png" class="img-responsive" style="max-width: 65%"/>
                     </a>
-                    <div id="mathWorks" class="collapse fade in active">
+                    <div id="mathWorks" class="collapse fade">
                         <p>
                             I also currently work at MathWorks&trade; as a Student Ambassador. Basically, my job is to:
                             <ul>
@@ -212,7 +213,7 @@
                     <a href="#thg" data-toggle="collapse">
                         <img src="resources/images/companies/thg.png" class="img-responsive" style="max-width: 75%"/>
                     </a>
-                    <div id="thg" class="collapse fade in active">
+                    <div id="thg" class="collapse fade">
                         <p>
                             At THG, I was responsible for studying possible connections between price of energy and carbon dioxide emissions. I used MATLAB&reg; and Excel&reg; to analyze the huge amounts of data; in particular, I used the Parallel Computing Toolbox and Publishing to complete the project in a timely manner.
                         </p>
@@ -224,7 +225,7 @@
                     <a href="#georgiaTech" data-toggle="collapse">
                         <img src="resources/images/companies/georgiaTech.png" class="img-responsive" style="max-width: 25%"/>
                     </a>
-                    <div id="georgiaTech" class="collapse fade in active">
+                    <div id="georgiaTech" class="collapse fade">
                         <p>
                             I'm a Teaching Assistant for CS 1371 <em>(MATLAB&reg;)</em> at the Georgia Institute of Technology. Here, I'm responsible for teaching students the basics of MATLAB&reg; and programming, and how computers can help solve complex problems. Additionally, I'm also responsible for the autograder, which is software that automatically runs and grades student submissions.
                         </p>
@@ -234,7 +235,7 @@
                     <a href="#experianHealth" data-toggle="collapse">
                         <img src="resources/images/companies/experianHealth.png" class="img-responsive"/>
                     </a>
-                    <div id="experianHealth" class="collapse fade in active">
+                    <div id="experianHealth" class="collapse fade">
                         <p>
                             At Experian&trade; Health, I was responsible for managing the client-facing, Tableau&reg;-based healthcare dashboard system. The system allows users to monitor patients and billing. Using the Tableau&reg; Python API, I automated the user sign up process, saving ~3 hours per week and reducing errors to zero.
                         </p>
@@ -244,7 +245,7 @@
                     <a href="#chickasaw" data-toggle="collapse">
                         <img src="resources/images/companies/chickasaw.png" class="img-responsive"/>
                     </a>
-                    <div id="chickasaw" class="collapse fade in active">
+                    <div id="chickasaw" class="collapse fade">
                     </div>
                 </div>
             </div>
@@ -253,7 +254,7 @@
                     <a href="#stinnettAssociates" data-toggle="collapse">
                         <img src="resources/images/companies/stinnettAssociates.png" class="img-responsive"/>
                     </a>
-                    <div id="stinnettAssociates" class="collapse fade in active">
+                    <div id="stinnettAssociates" class="collapse fade">
                         <p>
                             At Stinnett &amp; Associates, LLC, I was primarily responsible for creating and maintaining VBA applications for the company, particularly applications within Microsoft Excel. I created an Inventory Tracker, which would alert users when to order more supplies so that existing events would be properly staffed. Furthermore, I also created an Outlook app that would read the content of an applicant's email, and then place salient information into a companion Excel workbook.
                         </p>
@@ -263,7 +264,7 @@
                     <a href="#mathnasium" data-toggle="collapse">
                         <img src="resources/images/companies/mathnasium.png" class="img-responsive"/>
                     </a>
-                    <div id="mathnasium" class="collapse fade in active">
+                    <div id="mathnasium" class="collapse fade">
                         <p>
                             At Mathnasium&trade;, I was responsible for teaching students young and old how to grapple with Mathematics. I did not work here long, but the experience gleaned proved invaluable when teaching MATLAB at Georgia Tech.
                         </p>
@@ -273,7 +274,7 @@
                     <a href="#tulsaUniversity" data-toggle="collapse">
                         <img src="resources/images/companies/tulsaUniversity.png" class="img-responsive"/>
                     </a>
-                    <div id="tulsaUniversity" class="collapse fade in active">
+                    <div id="tulsaUniversity" class="collapse fade">
                         <p>
                             At the University of Tulsa, I interned as an assistant researcher in Mechanical, Chemical, and Electrical Engineering. Specifically, we were testing the strengths of different epoxies, which were utilized in fixing fissures in underwater oil pipelines. I worked under TU professor Dr. Michael Keller and Graduate Student Chris Burnworth, both of whom were experts in their respective fields.
                         </p>
@@ -372,7 +373,6 @@
                                         SoluCheck was started from a desire to be lazy. For CS 1371 (A class which I now TA for), we have to create code that will, theoretically, solve a given problem for <em>any</em> starting conditions. These starting conditions are given as inputs to MATLAB&reg; functions, or as external files (i.e., text files, image files, etc.).
                                     </p>
                                     <div class="beginning">
-                                        <!-- TODO: IMAGE HERE -->
                                         <h3>The Beginning</h3>
                                         <p>
                                             Originally a command-line utility, it consisted of one function - Solver - that took in a function name (as a string), a "number of iterations" (how many times solver would test the function), and a variable number of arguments - arguments that specify the starting argument and the "step size" for that argument. Basically, solver would increment the argument by its step size each successive iteration. This was clunky, to say the least, and for a large number of arguments, would quickly go out of hand with number of arguments. Indeed, the first solver didn't even work!
@@ -391,8 +391,8 @@
                                         </p>
                                     </div>
                                     <div class="fourth">
-                                        <!-- TODO: IMAGE HERE -->
-                                        <h3>A GUI Arises</h3>
+                                        <img src="resources/images/projects/soluCheckGUI.png" class="img-responsive pull-left"/>
+                                        <h3>A GUI Rises</h3>
                                         <p>
                                             This is it. The beginning of SoluCheck, SoluWare (The "parent company" responsible for SoluCheck - I had my head in the clouds). The world's first (and still only!) GUI that will programmatically check homework for a variety of test cases. Mind you, there are still some problems. The business logic and presentation logic are still combined - not good for any product, and there are still a variety of arguments not testable. But it's a start.
                                         </p>
@@ -422,7 +422,6 @@
                                         <div class="advanced">
                                             <div class="row content">
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for Notification-->
                                                     <h3><span class="glyphicon glyphicon-envelope"></span></h3>
                                                     <p>Notifications</p>
                                                     <h5>
@@ -430,24 +429,27 @@
                                                     </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for Performance-->
                                                     <h3><span class="glyphicon glyphicon-signal"></span></h3>
                                                     <p>Performance</p>
-                                                    <p>
+                                                    <h5>
                                                         Does your code run slowly? Or quickly? See how it stacks up against the solution file with timing and code performance analysis. See exactly what's slowing you down, and graph timing information over the entire set of iterations.
-                                                    </p>
+                                                    </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for Auditing-->
-                                                    <h3>Auditing</h3>
-                                                    <p>
+                                                    <h3><span class="glyphicon glyphicon-check"></span></h3>
+                                                    <p>Auditing</p>
+                                                    <h5>
                                                         Don't believe the solution code is right? Audit instead, and see how many times your function agrees with the solution, and, for where they differ, know how and why, with input and output information.
-                                                    </p>
+                                                    </h5>
                                                 </div>
                                             </div>
                                             <div class="text-center row content">
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
+                                                    <h3><span class="glyphicon glyphicon-envelope"></span></h3>
+                                                    <p>Notifications</p>
+                                                    <h5>
+                                                        Need to head out? Have SoluCheck email you the results of your test, viewable from anywhere .mat files are supported!
+                                                    </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
                                                     <!-- Glyphicon for _-->
