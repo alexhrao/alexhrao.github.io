@@ -423,21 +423,21 @@
                                             <div class="row content">
                                                 <div class="text-center col-sm-4">
                                                     <h3><span class="glyphicon glyphicon-envelope"></span></h3>
-                                                    <p>Notifications</p>
+                                                    <h4>Notifications</h4>
                                                     <h5>
                                                         Need to head out? Have SoluCheck email you the results of your test, viewable from anywhere .mat files are supported!
                                                     </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
                                                     <h3><span class="glyphicon glyphicon-signal"></span></h3>
-                                                    <p>Performance</p>
+                                                    <h4>Performance</h4>
                                                     <h5>
                                                         Does your code run slowly? Or quickly? See how it stacks up against the solution file with timing and code performance analysis. See exactly what's slowing you down, and graph timing information over the entire set of iterations.
                                                     </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
                                                     <h3><span class="glyphicon glyphicon-check"></span></h3>
-                                                    <p>Auditing</p>
+                                                    <h4>Auditing</h4>
                                                     <h5>
                                                         Don't believe the solution code is right? Audit instead, and see how many times your function agrees with the solution, and, for where they differ, know how and why, with input and output information.
                                                     </h5>
@@ -445,39 +445,48 @@
                                             </div>
                                             <div class="text-center row content">
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-envelope"></span></h3>
-                                                    <p>Notifications</p>
+                                                    <h3><span class="glyphicon glyphicon-file"></span></h3>
+                                                    <h4>Files</h4>
                                                     <h5>
-                                                        Need to head out? Have SoluCheck email you the results of your test, viewable from anywhere .mat files are supported!
+                                                        Need to test contents of text files? Use the File Comparison Tool to automatically include files as outputs.
                                                     </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
+                                                    <h3><span class="glyphicon glyphicon-picture"></span></h3>
+                                                    <h4>Images</h4>
+                                                    <h5>
+                                                        Do you need to check images? Use the Image Comparison Tool, which has built-in tolerance that has been verified as identical to that of the autograder.
+                                                    </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
-                                                </div>
-                                            </div>
-                                            <div class="row content">
-                                                <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
-                                                </div>
-                                                <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
-                                                </div>
-                                                <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
+                                                    <h3><span class="fa fa-area-chart"></span></h3>
+                                                    <h4>Plots</h4>
+                                                    <h5>
+                                                        Need to check plot outputs? SoluCheck's Plot Compare Tool will inform you of the average "plot difference" (% difference between plots).
+                                                    </h5>
                                                 </div>
                                             </div>
                                             <div class="row content">
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
+                                                    <h3><span class="glyphicon glyphicon-import"></span></h3>
+                                                    <h4>Loading &amp; Custom arguments</h4>
+                                                    <h5>
+                                                        Need to fine-tune your input arguments? Simply create custom input scripts that output the new input argument and run in a sandboxed state. Need to include variables, but don't want their value to be overwritten? Just load a custom .MAT file using the Variable Loader.
+                                                    </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
+                                                    <h3><span class="glyphicon glyphicon-transfer"></span></h3>
+                                                    <h4>Variable I/O</h4>
+                                                    <h5>
+                                                        Does your function support <div class="code">varargin</div> and/or <div class="code"    >varargout</div> parameters? Test the function using SoluCheck's built-in variable I/O support.
+                                                    </h5>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <!-- Glyphicon for _-->
+                                                    <h3><span class="fa fa-database"></span></h3>
+                                                    <h4>Automation</h4>
+                                                    <h5>
+                                                        Have a database of tests you'd like to perform? Import them with the Automation module of SoluCheck.
+                                                    </h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -494,7 +503,7 @@
                                     Like Sudoku Online, this one was born out of a simple thought - "I wonder if this is possible..." I was studying Chess algorithms, and I realized that it was possible for a computer to track moves. At the time, the only real "programming language" I knew was MATLAB&reg;, so I got to work, and wrote the first Chess Player for MATLAB.
                                 </p>
                                 <p>
-                                    Supported wherever MATLAB GUIs are supported, the app will track player moves and keep a log of them, which can be docked or free-floating. It also ensures that checkmate is valid, and won't let the player put his or her King into harm's way. The game highlights squares that are valid moves, albeit using an inefficient algorithm. But at the end of the day, it <em>works</em>, and it taught me a good bit about MATLAB&reg;
+                                    Supported wherever MATLAB GUIs are supported, the app will track player moves and keep a log of them, which can be docked or free-floating. It also ensures that checkmate is valid, and won't let the player put his or her King into harm's way. The game highlights squares that are valid moves, albeit using an inefficient algorithm. But at the end of the day, it <em>works</em>, and it taught me a good bit about MATLAB&reg;.
                                 </p>
                             </div>
                         </div>
@@ -504,7 +513,7 @@
                                     <img src="resources/images/projects/variableLoader.png" data-toggle="tooltip" title="The main window for the variable loader. Click to view the repository" data-placement="auto top" class="img-responsive pull-left"/>
                                 </a>
                                 <p>
-                                    A simple project for MATLAB, and interestingly, actually originally a part of SoluCheck. Basically, it allows loading a variable number of .mat files into your workspace, using a user-friendly GUI (which I <em>personally</em> think is better than the one supplied by MathWorks&trade;)
+                                    A simple project for MATLAB, and interestingly, actually originally a part of SoluCheck. Basically, it allows loading a variable number of .mat files into your workspace, using a user-friendly GUI (which I <em>personally</em> think is better than the one supplied by MathWorks&trade;).
                                 </p>
                             </div>
                         </div>

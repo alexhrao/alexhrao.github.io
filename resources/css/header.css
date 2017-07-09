@@ -109,6 +109,11 @@ footer {
 .social {
     background-color: #222;
 }
+.code {
+    display:inline;
+    font-family: "Courier New", Courier, monospace;
+    font-style: normal;
+}
 /* ID: */
 #imgScouts {
     max-width: 15%;
@@ -217,6 +222,9 @@ footer {
 }
 .projects li {
     font-size: 20px;
+}
+.projects p {
+    text-indent: 20px;
 }
 .social-icons i {
     margin: 1.5%;
