@@ -16,11 +16,11 @@ $(document).ready(function() {
     $('#logo').hover(
         function() {
             $('#logoImage').hide();
-            $('#logoName').fadeIn('fast');
+            $('#logoName').fadeIn(500);
         },
         function() {
             $('#logoName').hide();
-            $('#logoImage').fadeIn('fast');
+            $('#logoImage').fadeIn(500);
         }
     );
 });
