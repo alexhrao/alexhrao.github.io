@@ -119,6 +119,7 @@ footer {
 }
 .list-item {
     font-weight: 100;
+    margin-bottom: 20px;
 }
 /* ID: */
 #imgScouts {
