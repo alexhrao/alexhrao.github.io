@@ -121,6 +121,9 @@ footer {
     font-weight: 100;
     margin-bottom: 20px;
 }
+.advanced {
+    color: white;
+}
 /* ID: */
 #imgScouts {
     max-width: 15%;
@@ -248,6 +251,9 @@ footer {
 .projects p {
     text-indent: 20px;
 }
+.sectionHeader {
+    cursor: pointer;
+}
 .sectionHeader:after {
     font-family: "Glyphicons Halflings";
     font-size: 15px;
@@ -255,6 +261,7 @@ footer {
 }
 .sectionHeader.collapsed:after {
     content: "\e080";
+    
 }
 .social-icons i {
     margin: 1.5%;
