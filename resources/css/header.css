@@ -114,6 +114,12 @@ footer {
     font-family: "Courier New", Courier, monospace;
     font-style: normal;
 }
+.list-heading {
+    font-weight: 600;
+}
+.list-item {
+    font-weight: 100;
+}
 /* ID: */
 #imgScouts {
     max-width: 15%;
