@@ -242,8 +242,9 @@ footer {
 /* TODO: Fix image showing */
 .projects img {
     max-width: 17.5%;
-    margin: 10px;
     padding: 10px;
+    display: inline-block;
+    margin: 25px;
 }
 .projects li {
     font-size: 20px;
