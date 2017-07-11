@@ -129,7 +129,10 @@ footer {
     max-width: 15%;
     margin-right: 15px;
 }
-
+#sudokuOnlineLogo {
+    max-width: 40%;
+    margin: 10px;
+}
 /* Combinations: */
 .about ul {
     background-color: #157D2C;
@@ -208,6 +211,9 @@ footer {
 .projects p,
 .projects li,
 .projects h1 {
+    color: white;
+}
+.projects h5 {
     color: white;
 }
 .projects .nav-pills > li > a {
