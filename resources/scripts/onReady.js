@@ -31,7 +31,6 @@ $(document).ready(function() {
         focus: false
     });
     $('#sendMessage').click(function() {
-        alert($('#contactName').val());
         emailjs.send("gmail", "default", {name: $('#contactName').val(), email: $('#contactEmail').val(), content: $('#messageContent').summernote('code')})
         .then(function(response) {
             $('#messenger').show();
