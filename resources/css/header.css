@@ -140,6 +140,9 @@ footer {
     display: inline-block;
 }
 /* Combinations: */
+.navbar-right a {
+    cursor: pointer;
+}
 .about ul {
     background-color: #157D2C;
 }
