@@ -31,7 +31,13 @@ $(document).ready(function() {
         focus: false
     });
     $('#sendMessage').click(function() {
-        emailjs.send("gmail", "default", {name: $('#contactName').val(), email: $('#contactEmail').val(), content: $('#messageEditor').summernote('code')})
+        var dt = new Date($.now());
+        emailjs.send("gmail", "default", {
+            name: $('#contactName').val(),
+            email: $('#contactEmail').val(),
+            content: $('#messageEditor').summernote('code'),
+            time: concat(dt.getFullYear(), "-", addZero(dt.getMonth()), "-", addZero(dt.getDay()), " ", addZero(dt.getHours()), ":", addZero(dt.getMinutes(), ":", addZero(dt.getSeconds())))
+        })
         .then(function(response) {
             $('#messenger').show();
             $('#messenger').append("<div id='messageSent' class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Your message was successfully delivered!</div>").delay(2500).fadeOut(1000, function() {
@@ -45,3 +51,10 @@ $(document).ready(function() {
         });
     });
 });
+
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
