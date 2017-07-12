@@ -29,4 +29,7 @@ $(document).ready(function() {
         maxHeight: null,
         focus: false
     });
+    $('#sendMessage').click(function(event) {
+        alert("Sup");
+    })
 });
