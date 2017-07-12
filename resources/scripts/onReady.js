@@ -23,4 +23,10 @@ $(document).ready(function() {
             $('#logoImage').fadeIn(500);
         }
     );
+    $('#messageEditor').summernote({
+        height: 300,
+        minHeight: null,
+        maxHeight: null,
+        focus: false
+    });
 });
