@@ -31,7 +31,7 @@ $(document).ready(function() {
         focus: false
     });
     $('#sendMessage').click(function() {
-        emailjs.send("gmail", "default", {name: $('#contactName').val(), email: $('#contactEmail').val(), content: $('#messageContent').summernote('code')})
+        emailjs.send("gmail", "default", {name: $('#contactName').val(), email: $('#contactEmail').val(), content: $('#messageEditor').summernote('code')})
         .then(function(response) {
             $('#messenger').show();
             $('#messenger').append("<div id='messageSent' class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Your message was successfully delivered!</div>").delay(2500).fadeOut(1000, function() {
