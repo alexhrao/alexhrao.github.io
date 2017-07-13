@@ -263,12 +263,12 @@ h3:hover {
     margin-top:30px;
     color: #1D3462;
 }
-/* TODO: Fix image showing */
 .projects img {
     max-width: 17.5%;
     padding: 10px;
     display: inline-block;
     margin: 25px;
+    border-radius: 25px;
 }
 .projects li {
     font-size: 20px;
