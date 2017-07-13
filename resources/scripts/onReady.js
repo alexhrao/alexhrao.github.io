@@ -25,6 +25,7 @@ $(document).ready(function() {
         }
     );
     $('#messageEditor').summernote({
+        placeholder: 'Your message to me...',
         height: 300,
         minHeight: null,
         maxHeight: null,
