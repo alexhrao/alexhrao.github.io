@@ -34,10 +34,10 @@ $(document).ready(function() {
     $('#sendMessage').click(function() {
         var dt = new Date($.now());
         emailjs.send("gmail", "default", {
-            name: $('#contactName').val(),
-            email: $('#contactEmail').val(),
-            content: $('#messageEditor').summernote('code'),
-            time: concat(dt.getFullYear(), "-", addZero(dt.getMonth()), "-", addZero(dt.getDay()), " ", addZero(dt.getHours()), ":", addZero(dt.getMinutes(), ":", addZero(dt.getSeconds())))
+            "name": $('#contactName').val(),
+            "email": $('#contactEmail').val(),
+            "content": $('#messageEditor').summernote('code'),
+            "time": dt.getFullYear() + "-" + addZero(dt.getMonth()) + "-" + addZero(dt.getDay()) + " " + addZero(dt.getHours()) + ":" + addZero(dt.getMinutes() + ":" + addZero(dt.getSeconds()))
         })
         .then(function(response) {
             $('#messenger').show();
