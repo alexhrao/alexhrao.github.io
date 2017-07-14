@@ -16,7 +16,6 @@ $(document).ready(function() {
         }
     });
     
-    $('#logoName').hide();
     $('#logo').hover(
         function() {
             $('#logoImage').hide();
