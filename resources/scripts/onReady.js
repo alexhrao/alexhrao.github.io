@@ -111,14 +111,27 @@ function changeWelcome() {
 
 function startUp() {
     $('body > :not(#beginning)').addClass("blurred");
-    $('#beginning').text("Welcome.").fadeIn(1000).delay(1000).fadeOut(1000, function() {
-        $('#beginning').text("I'm glad you made it.");
-        $('#beginning').fadeIn(1000).delay(1500).fadeOut(1000, function() {
-            $('body > :not(#beginning)').addClass("unblurred");
-            $('body > :not(#beginning)').removeClass("blurred");
-            setInterval(changeWelcome, 5000);
-        })
-    });
+    $('#beginning')
+    .show()
+    .typeIt({
+        autoStart: true,
+        deleteSpeed: 100,
+        speed: 50,
+        callback: function() {
+            $('#beginning').fadeOut(1000, function() {
+                $('body > :not(#beginning)')
+                .addClass("unblurred")
+                .removeClass("blurred");
+                setInterval(changeWelcome, 5000);
+            });
+        }
+    })
+    .tiType("Hi there!")
+    .tiPause(1000)
+    .tiDelete(9)
+    .tiType("I'm happy you made it")
+    .tiPause(1500)
+    .tiDelete(21)
 }
 
 function addZero(i) {
