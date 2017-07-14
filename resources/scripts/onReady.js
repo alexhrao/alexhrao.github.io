@@ -87,6 +87,7 @@ $(document).ready(function() {
 var welcome = [
     "Welcome. I'm glad you're here.",
     "Wilkomen. Ich bin froh, dass du hier bist.",
+    "Alexander.getSalutation();",
     "Receperint. Gaudeo te hic.",
     "欢迎。我很高兴你在这里",
     "ようこそ。あなたがここにいることをうれしく思います。",
