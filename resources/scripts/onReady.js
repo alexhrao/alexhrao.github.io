@@ -111,13 +111,13 @@ function changeWelcome() {
 
 function startUp() {
     $('body > :not(#beginning)').addClass("blurred");
-    $('#beginning').hide();
-    $('#beginning').fadeIn(1000, function() {
-        $('#beginning').fadeOut(1000, function() {
+    $('#beginning').text("Welcome.").fadeIn(1000).delay(1000).fadeOut(1000, function() {
+        $('#beginning').text("I'm glad you made it.");
+        $('#beginning').fadeIn(1000).delay(3000).fadeOut(1000, function() {
             $('body > :not(#beginning)').addClass("unblurred");
             $('body > :not(#beginning)').removeClass("blurred");
             setInterval(changeWelcome, 5000);
-        });
+        })
     });
 }
 
