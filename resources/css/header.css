@@ -83,13 +83,16 @@ footer {
     border-radius: 0;
     margin-bottom: 0;
 }
-.header h1,
 .header {
     padding-top: 105px;
     padding-bottom: 70px;
     background-color: #3E59BD;
-    color: white;
     border: 0px;
+}
+.header h1 {
+    height: 300px;
+    padding-bottom: 70px;
+    color: white;
 }
 .head {
     margin-bottom: 50px;
