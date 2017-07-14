@@ -173,6 +173,7 @@ footer {
 h1:hover,
 h2:hover,
 h3:hover,
+a:hover,
 .glyphicon:hover {
     text-shadow: 1px 1px 25px white;
 }
@@ -253,10 +254,12 @@ h3:hover,
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
-.projects h1:hover,
-.projects h2:hover,
-.projects h3:hover {
-    text-shadow: 1px 1px 25px white;
+.professional h1:hover,
+.professional h2:hover,
+.professional h3:hover,
+.professional a:hover,
+.professional .glyphicon:hover {
+    text-shadow: 1px 1px 25px black !important;
 }
 .projects p,
 .projects li,
