@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    setInterval(changeWelcome, 5000);
     emailjs.init("user_F0kE6IBMQ9Lm6OLpQRxDf")
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
@@ -83,6 +84,30 @@ $(document).ready(function() {
         });
     });
 });
+
+var welcome = [
+    "Welcome. I'm glad you're here.",
+    "Wilkomen. Ich bin froh, dass du hier bist.",
+    "Receperint. Gaudeo te hic.",
+    "欢迎。我很高兴你在这里",
+    "ようこそ。あなたがここにいることをうれしく思います。",
+    "स्वागत हे। मुझे खुशी है कि तुम यहाँ हो।",
+    "Bienvenue. Je suis content que tu sois là.",
+    "أهلا بك. أنا سعيد لأنك هنا.",
+    "Bienvenido. Me alegra que estes aqui.",
+    "Benvenuto. Sono contento che tu sia qui."
+]
+var i = 0;
+
+function changeWelcome() {
+    $('#welcome').fadeOut('fast', function() {
+            $('#welcome').text(welcome[i]);
+            $('#welcome').fadeIn('fast');
+    });
+    if (++i == welcome.length) {
+        i = 0;
+    }
+}
 
 function addZero(i) {
     if (i < 10) {
