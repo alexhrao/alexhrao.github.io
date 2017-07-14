@@ -85,9 +85,9 @@ $(document).ready(function() {
 });
 
 var welcome = [
+    "Alex.greet();",
     "Welcome. I'm glad you're here.",
     "Wilkomen. Ich bin froh, dass du hier bist.",
-    "Alex.greet();",
     "Receperint. Gaudeo te hic.",
     "欢迎。我很高兴你在这里",
     "ようこそ。あなたがここにいることをうれしく思います。",
