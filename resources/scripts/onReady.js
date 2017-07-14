@@ -87,7 +87,7 @@ $(document).ready(function() {
 var welcome = [
     "Welcome. I'm glad you're here.",
     "Wilkomen. Ich bin froh, dass du hier bist.",
-    "Alexander.getSalutation();",
+    "Alex.greet();",
     "Receperint. Gaudeo te hic.",
     "欢迎。我很高兴你在这里",
     "ようこそ。あなたがここにいることをうれしく思います。",
@@ -100,10 +100,15 @@ var welcome = [
 var ind = 0;
 
 function changeWelcome() {
-    $('#welcome').fadeOut('fast', function() {
-            $('#welcome').text(welcome[ind]);
-            $('#welcome').fadeIn('fast');
-    });
+    $('#welcome').typeIt({
+        autoStart: true,
+        deleteSpeed: 20,
+        speed: 30,
+        breakLines: false,
+        strings: welcome[ind]
+    })
+    .tiPause(3000)
+    .tiDelete(welcome[ind].length)
     if (++ind == welcome.length) {
         ind = 0;
     }
@@ -112,26 +117,24 @@ function changeWelcome() {
 function startUp() {
     $('body > :not(#beginning)').addClass("blurred");
     $('#beginning')
-    .show()
-    .typeIt({
-        autoStart: true,
-        deleteSpeed: 100,
-        speed: 50,
-        callback: function() {
-            $('#beginning').fadeOut(1000, function() {
-                $('body > :not(#beginning)')
-                .addClass("unblurred")
-                .removeClass("blurred");
-                setInterval(changeWelcome, 5000);
-            });
-        }
-    })
-    .tiType("Hi there!")
-    .tiPause(1000)
-    .tiDelete(9)
-    .tiType("I'm happy you made it")
-    .tiPause(1500)
-    .tiDelete(21)
+    .text("Hi there!")
+    .fadeIn(1500, function() {
+        $('#beginning')
+        .fadeOut(1500, function() {
+            $('#beginning')
+            .text("I'm happy you made it")
+            .fadeIn(1500, function() {
+                $('#beginning')
+                .fadeOut(1500, function() {
+                    $('body > :not(#beginning)')
+                    .addClass("unblurred")
+                    .removeClass("blurred");
+                    changeWelcome();
+                    setInterval(changeWelcome, 7000);
+                });
+            }).delay(800);
+        });
+    }).delay(800);
 }
 
 function addZero(i) {
