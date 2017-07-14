@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    setInterval(changeWelcome, 5000);
+    startUp();
     emailjs.init("user_F0kE6IBMQ9Lm6OLpQRxDf")
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
@@ -97,16 +97,28 @@ var welcome = [
     "Bienvenido. Me alegra que estes aqui.",
     "Benvenuto. Sono contento che tu sia qui."
 ]
-var i = 0;
+var ind = 0;
 
 function changeWelcome() {
     $('#welcome').fadeOut('fast', function() {
-            $('#welcome').text(welcome[i]);
+            $('#welcome').text(welcome[ind]);
             $('#welcome').fadeIn('fast');
     });
-    if (++i == welcome.length) {
-        i = 0;
+    if (++ind == welcome.length) {
+        ind = 0;
     }
+}
+
+function startUp() {
+    $('body > :not(#beginning)').addClass("blurred");
+    $('#beginning').hide();
+    $('#beginning').fadeIn(1000, function() {
+        $('#beginning').fadeOut(1000, function() {
+            $('body > :not(#beginning)').addClass("unblurred");
+            $('body > :not(#beginning)').removeClass("blurred");
+            setInterval(changeWelcome, 5000);
+        });
+    });
 }
 
 function addZero(i) {
