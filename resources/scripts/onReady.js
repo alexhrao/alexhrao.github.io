@@ -91,9 +91,7 @@ var welcome = [
     "Receperint. Gaudeo te hic.",
     "欢迎。我很高兴你在这里",
     "ようこそ。あなたがここにいることをうれしく思います。",
-    "स्वागत हे। मुझे खुशी है कि तुम यहाँ हो।",
     "Bienvenue. Je suis content que tu sois là.",
-    "أهلا بك. أنا سعيد لأنك هنا.",
     "Bienvenido. Me alegra que estes aqui.",
     "Benvenuto. Sono contento che tu sia qui."
 ]
