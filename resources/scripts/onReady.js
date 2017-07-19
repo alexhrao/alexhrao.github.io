@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    startUp();
     emailjs.init("user_F0kE6IBMQ9Lm6OLpQRxDf")
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
@@ -84,6 +83,29 @@ $(document).ready(function() {
     });
 });
 
+$(window).on('load', function() {
+    $('body > :not(#beginning)').addClass("blurred");
+    $('#beginning')
+    .text("Hi there!")
+    .fadeIn(1500, function() {
+        $('#beginning')
+        .fadeOut(1500, function() {
+            $('#beginning')
+            .text("I'm happy you made it")
+            .fadeIn(1500, function() {
+                $('#beginning')
+                .fadeOut(1500, function() {
+                    $('body > :not(#beginning)')
+                    .addClass("unblurred")
+                    .removeClass("blurred");
+                    changeWelcome();
+                    setInterval(changeWelcome, 7000);
+                });
+            }).delay(800);
+        });
+    }).delay(800);
+})
+
 var welcome = [
     "Alex.greet();",
     "Welcome. I'm glad you're here.",
@@ -110,29 +132,6 @@ function changeWelcome() {
     if (++ind == welcome.length) {
         ind = 0;
     }
-}
-
-function startUp() {
-    $('body > :not(#beginning)').addClass("blurred");
-    $('#beginning')
-    .text("Hi there!")
-    .fadeIn(1500, function() {
-        $('#beginning')
-        .fadeOut(1500, function() {
-            $('#beginning')
-            .text("I'm happy you made it")
-            .fadeIn(1500, function() {
-                $('#beginning')
-                .fadeOut(1500, function() {
-                    $('body > :not(#beginning)')
-                    .addClass("unblurred")
-                    .removeClass("blurred");
-                    changeWelcome();
-                    setInterval(changeWelcome, 7000);
-                });
-            }).delay(800);
-        });
-    }).delay(800);
 }
 
 function addZero(i) {
