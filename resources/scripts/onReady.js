@@ -90,21 +90,14 @@ $(window).on('load', function() {
     .fadeIn(1500, function() {
         $('#beginning')
         .fadeOut(1500, function() {
-            $('#beginning')
-            .text("I'm happy you made it")
-            .fadeIn(1500, function() {
-                $('#beginning')
-                .fadeOut(1500, function() {
-                    $('body > :not(#beginning)')
-                    .addClass("unblurred")
-                    .removeClass("blurred");
-                    changeWelcome();
-                    setInterval(changeWelcome, 7000);
-                });
-            }).delay(800);
+            $('body > :not(#beginning)')
+            .addClass("unblurred")
+            .removeClass("blurred");
+            changeWelcome();
+            setInterval(changeWelcome, 7000);
         });
     }).delay(800);
-})
+});
 
 var welcome = [
     "Alex.greet();",
