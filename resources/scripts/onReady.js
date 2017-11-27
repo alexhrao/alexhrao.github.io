@@ -84,6 +84,11 @@ $(document).ready(function() {
 });
 
 $(window).on('load', function() {
+    // I don't like this whole "blurring" thing... 
+    // the lessons learned are good. So, I'll start up the changeWelcome() and return.
+    changeWelcome();
+    setInterval(changeWelcome, 7000);
+    return;
     $('body > :not(#beginning)').addClass("blurred");
     $('#beginning')
     .text("Hi there!")
