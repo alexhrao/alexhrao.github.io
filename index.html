@@ -17,11 +17,10 @@
         <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-        <script type="text/javascript" src="resources/scripts/onReady.js"></script>
         <script src="https://widget.battleforthenet.com/widget.js" async></script>
+        <script type="text/javascript" src="resources/scripts/onReady.js"></script>
     </head>
     <body>
-        <!-- Beginning -->
         <!-- Navigation Bar -->
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid navbar-inverse">
@@ -32,32 +31,57 @@
                             <span class="icon-bar"></span>
                         </button>
                     <a id="logo" href="https://www.github.com/alexhrao" class="navbar-left">
-                            &nbsp;<img id="logoImage" class="img-circle" src="resources/images/branding/logo.png" height="50px"/>
-                            <div id="logoName" class="navbar-brand">
-                                Alexander Rao
-                            </div>
-                        </a>
+                        &nbsp;
+                        <img id="logoImage" class="img-circle" src="resources/images/branding/logo.png" height="50px" />
+                        <div id="logoName" class="navbar-brand">
+                            Alexander Rao
+                        </div>
+                    </a>
                 </div>
                 <div id="menuBar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav visible-xs">
-                        <li><a href="#aboutMe" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
-                        <li><a href="#passions" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-fire"></span> Passions</a></li>
-                        <li><a href="#professional" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a></li>
-                        <li><a href="#projects" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-tasks"></span> Projects</a></li>
+                        <li>
+                            <a href="#aboutMe" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-user"></span> About Me</a>
+                        </li>
+                        <li>
+                            <a href="#passions" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-fire"></span> Passions</a>
+                        </li>
+                        <li>
+                            <a href="#professional" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a>
+                        </li>
+                        <li>
+                            <a href="#projects" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-tasks"></span> Projects</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav hidden-xs">
-                        <li><a href="#aboutMe"><span class="glyphicon glyphicon-user"></span> About Me</a></li>
-                        <li><a href="#passions"><span class="glyphicon glyphicon-fire"></span> Passions</a></li>
-                        <li><a href="#professional"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a></li>
-                        <li><a href="#projects"><span class="glyphicon glyphicon-tasks"></span> Projects</a></li>
+                        <li>
+                            <a href="#aboutMe"><span class="glyphicon glyphicon-user"></span> About Me</a>
+                        </li>
+                        <li>
+                            <a href="#passions"><span class="glyphicon glyphicon-fire"></span> Passions</a>
+                        </li>
+                        <li>
+                            <a href="#professional"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a>
+                        </li>
+                        <li>
+                            <a href="#projects"><span class="glyphicon glyphicon-tasks"></span> Projects</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right visible-xs">
-                        <li><a data-toggle="modal" data-target="#contact"><span class="glyphicon glyphicon-inbox"></span> Contact</a></li>
-                        <li><a href="#social" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a></li>
+                        <li>
+                            <a data-toggle="modal" data-target="#contact"><span class="glyphicon glyphicon-inbox"></span> Contact</a>
+                        </li>
+                        <li>
+                            <a href="#social" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right hidden-xs">
-                        <li><a data-toggle="modal" data-target="#contact"><span class="glyphicon glyphicon-inbox"></span> Contact</a></li>
-                        <li><a href="#social"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a></li>
+                        <li>
+                            <a data-toggle="modal" data-target="#contact"><span class="glyphicon glyphicon-inbox"></span> Contact</a>
+                        </li>
+                        <li>
+                            <a href="#social"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +91,7 @@
         <div id="beginning" class="text-center"></div>
         <!-- Header -->
         <div id="aboutMe" class="container-fluid header text-center">
-            <img src="resources/images/about/ProfSeniorPic.png" class="img-circle img-responsive" style="display:inline" alt="Me">
+            <img src="resources/images/about/ProfSeniorPic.png" class="img-circle img-responsive" style="display:inline" alt="Me" />
             <h1 id="welcome"></h1>
         </div>
         <!-- Content -->
@@ -111,11 +135,20 @@
                 <h1 class="text-center head">Yours Truly</h1>
                 <div class="col-lg-12">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#intro">Me</a></li>
-                        <li><a data-toggle="tab" href="#education">Education</a></li>
-                        <li><a data-toggle="tab" href="#pastimes">Pastimes</a></li>
-                        <li><a data-toggle="tab" href="#resume">Resume</a></li>
-                        <li><a data-toggle="tab" href="#travel">Travels</a></li>
+                        <li class="active"><a data-toggle="tab" href="#intro">Me</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#pastimes">Pastimes</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#resume">Resume</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#travel">Travels</a>
+                        </li>
                     </ul>
                     <div class="tab-content">
                         <div id="intro" class="tab-pane fade in active">
@@ -124,17 +157,13 @@
                                 My name is Alex Rao, and this is my personal website. Here you'll find out who I am, what I'm all about, and what I've done. You'll also find out how to contact me, if you're in to that sort of thing.
                             </p>
                             <p>
-                                Who am I? That's an interesting question. The simplest answer is that I'm a young man ready to make something of myself in this world. I was born in Atlanta, GA, but quickly moved to Birmingham, AL and eventually to Tulsa, OK - which I still call home
-                                to this very day. I'm the son of two extraordinary parents, and the twin of one awesome sister. I'll answer your question before you ask it - no, my sister and I are <em>NOT</em> identical!
+                                Who am I? That's an interesting question. The simplest answer is that I'm a young man ready to make something of myself in this world. I was born in Atlanta, GA, but quickly moved to Birmingham, AL and eventually to Tulsa, OK - which I still call home to this very day. I'm the son of two extraordinary parents, and the twin of one awesome sister. I'll answer your question before you ask it - no, my sister and I are <em>NOT</em> identical!
                             </p>
                             <p>
-                                I'm very passionate about the relationship between software and hardware, and while not working, studying, or sleeping, you can usually find me hacking on some personal project. Indeed, that's the reason for the existence of all my GitHub repositories!
-                                Unfortunately, experimenting with software is much easier (and cheaper) than experimenting with hardware, so I haven't had as much experience tinkering with hardware - I hope this will change soon.
+                                I'm very passionate about the relationship between software and hardware, and while not working, studying, or sleeping, you can usually find me hacking on some personal project. Indeed, that's the reason for the existence of all my GitHub repositories! Unfortunately, experimenting with software is much easier (and cheaper) than experimenting with hardware, so I haven't had as much experience tinkering with hardware - I hope this will change soon.
                             </p>
                             <p>
-                                Most projects start because of a single thought - "Wouldn't it be cool if..." Interestingly enough, most of what I know about languages comes from these projects. While I take classes in Java, Python, etc. like everyone else, it is through these projects
-                                that I really <em>learned</em> these languages. As an example, I learned the Java Programming Language through the creation of <em>Sudoku Online</em>, and I really learned MATLAB&reg; through <em>SoluCheck</em>.
-                                Indeed, even while doing a project, I'll think "Oh, but what if I could do...," and then I start doing.
+                                Most projects start because of a single thought - "Wouldn't it be cool if..." Interestingly enough, most of what I know about languages comes from these projects. While I take classes in Java, Python, etc. like everyone else, it is through these projects that I really <em>learned</em> these languages. As an example, I learned the Java Programming Language through the creation of <em>Sudoku Online</em>, and I really learned MATLAB&reg; through <em>SoluCheck</em>. Indeed, even while doing a project, I'll think "Oh, but what if I could do...," and then I start doing.
                             </p>
                             <p class="thin">
                                 <br><br> I invite you to explore the rest of this website. I hope you enjoy!
@@ -146,9 +175,7 @@
                         <div id="education" class="tab-pane fade in">
                             <h1 class="text-center">Education</h1>
                             <p>
-                                I've been blessed to have an absolutely wonderful set of parents, who placed a high value on education. As such, I went to one of the best schools in Tulsa, OK - Holland Hall College Preparatory School. I graduated from there having earned the Patrick
-                                O. Morris award for outstanding intellectual, social, and ethical standards. While it may sound like I'm bragging about myself, I like to think I'm bragging about my family. It takes a village to raise a child, and the village
-                                did one hell of a job with me!
+                                I've been blessed to have an absolutely wonderful set of parents, who placed a high value on education. As such, I went to one of the best schools in Tulsa, OK - Holland Hall College Preparatory School. I graduated from there having earned the Patrick O. Morris award for outstanding intellectual, social, and ethical standards. While it may sound like I'm bragging about myself, I like to think I'm bragging about my family. It takes a village to raise a child, and the village did one hell of a job with me!
                             </p>
                             <h2>The Early Years: Holland Hall &amp; High School</h2>
                             <p>
@@ -156,29 +183,22 @@
                             </p>
                             <h3>The Classroom</h3>
                             <p>
-                                This was where I belong. I loved the classes at Holland Hall, especially since the classes were allowed to be interesting, engaging, and "abnormal." For example, <a href="https://www.hollandhall.org/staff/shingleton-keri/">Dr. Keri Shingleton</a>                            taught a class called <em>Microbes &amp; Diseases</em>, where we actually got to grow, test, and interact with different bacteria. Whenever I tell anyone about this class, they're response is almost always "You got to do THAT
-                                in high school???" I credit most of my critical thinking abilities to Holland Hall - learning how to learn was by far the overarching goal of Holland Hall. To say that has served me well would be massive understatement.<br>
+                                This was where I belong. I loved the classes at Holland Hall, especially since the classes were allowed to be interesting, engaging, and "abnormal." For example, <a href="https://www.hollandhall.org/staff/shingleton-keri/">Dr. Keri Shingleton</a> taught a class called <em>Microbes &amp; Diseases</em>, where we actually got to grow, test, and interact with different bacteria. Whenever I tell anyone about this class, they're response is almost always "You got to do THAT in high school!?" I credit most of my critical thinking abilities to Holland Hall - learning how to learn was by far the overarching goal of Holland Hall. To say that has served me well would be massive understatement.<br>
                             </p>
                             <p>
-                                Thankfully, Dr. Shingleton was not the only wonderful teacher at Holland Hall. <a href="https://www.hollandhall.org/staff/holmes-karen/">Mrs. Karen Holmes</a> taught me mathematics, and she was darn good at it too. She was
-                                so good, in fact, that she and I did an independent study together on Multivariable Calculus! To say she had a lasting impact on me would be 100% accurate. Indeed, I owe much of my mathematical ability to her teaching skills!
+                                Thankfully, Dr. Shingleton was not the only wonderful teacher at Holland Hall. <a href="https://www.hollandhall.org/staff/holmes-karen/">Mrs. Karen Holmes</a> taught me mathematics, and she was darn good at it too. She was so good, in fact, that she and I did an independent study together on Multivariable Calculus! To say she had a lasting impact on me would be 100% accurate. Indeed, I owe much of my mathematical ability to her teaching skills!
                             </p>
                             <h3>The Sports</h3>
                             <div class="col-xs-12" style="margin-bottom: 30px;">
                                 <img src="resources/images/about/crossCountry.png" class="img-responsive img-thumbnail hidden-xs pull-left" />
                                 <img src="resources/images/about/crossCountry.png" class="img-responsive img-thumbnail visible-xs" />
                                 <p>
-                                    I was a part of the Holland Hall Cross Country Team, all the way from 6th Grade to Senior Year. Don't be fooled - I am not a <em>fast</em> runner, but I can hold my own. Greg Spencer, my coach, actually <em>was</em> <strong>fast</strong>.
-                                    Like, so-fast-you-can't-see-him fast. Incidentally, he had actually graduated from Holland Hall, and his dad also taught there as well! A Holland Hall family right there. I actually did become the Men's Varsity Team Captain,
-                                    and I earned the prestigious "Hamburger Helper" award (It's not <em>that</em> prestigious, I guess, but still...) for keeping the tent standing during a torrential downpour. Overall, I really enjoyed Cross Country, and
-                                    I made some lifelong friends in that group.
+                                    I was a part of the Holland Hall Cross Country Team, all the way from 6th Grade to Senior Year. Don't be fooled - I am not a <em>fast</em> runner, but I can hold my own. Greg Spencer, my coach, actually <em>was</em> <strong>fast</strong>. Like, so-fast-you-can't-see-him fast. Incidentally, he had actually graduated from Holland Hall, and his dad also taught there as well! A Holland Hall family right there. I actually did become the Men's Varsity Team Captain, and I earned the prestigious "Hamburger Helper" award (It's not <em>that</em> prestigious, I guess, but still...) for keeping the tent standing during a torrential downpour. Overall, I really enjoyed Cross Country, and I made some lifelong friends in that group.
                                 </p>
                             </div>
                             <h2>Modern Times: College &amp; Beyond</h2>
                             <p>
-                                Nowadays, I'm a student at the Georgia Institute of Technology, where I'm working towards a Bachelor's of Science in Electrical Engineering (BSEE) with a minor in Computer Science (CS). Eventually, I hope to earn a Master's Degree, probably in Computer
-                                Science. But who knows? Maybe I'll be whisked away into Philosophy. The future's an open book, and I'm just hopping one page at a time. But I wouldn't bet on the whole Philosophy thing panning out. In my heart of hearts, I
-                                know I'm an Engineer.
+                                Nowadays, I'm a student at the Georgia Institute of Technology, where I'm working towards a Bachelor's of Science in Electrical Engineering (BSEE) with a minor in Computer Science (CS). Eventually, I hope to earn a Master's Degree, probably in Computer Science. But who knows? Maybe I'll be whisked away into Philosophy. The future's an open book, and I'm just hopping one page at a time. But I wouldn't bet on the whole Philosophy thing panning out. In my heart of hearts, I know I'm an Engineer.
                             </p>
                         </div>
                         <div id="pastimes" class="tab-pane fade in">
@@ -188,23 +208,18 @@
                                 <img src="resources/images/about/scouts.png" id="imgScouts" class="img-responsive img-thumbnail hidden-xs pull-left" />
                                 <img src="resources/images/about/scouts.png" class="img-responsive img-thumbnail visible-xs" />
                                 <p>
-                                    I was very active in Boy Scouts, starting as a wee little Cub Scout. I participated in all the cool stuff, like selling popcorn and making pinewood derby cars. While mine <em>**almost**</em> won, I still learned alot from
-                                    the experience, not to mention that I had a lot of fun doing it! Additionally, I made some of my most important friendships and relationships during my time at Troop 26.
+                                    I was very active in Boy Scouts, starting as a wee little Cub Scout. I participated in all the cool stuff, like selling popcorn and making pinewood derby cars. While mine <em>**almost**</em> won, I still learned alot from the experience, not to mention that I had a lot of fun doing it! Additionally, I made some of my most important friendships and relationships during my time at Troop 26.
                                 </p>
                                 <p>
-                                    Once I graduated to Boy Scouts, I went to BSA Troop 26, one of the largest Boy Scout troops in the United States. I quickly found that I loved it. Absolutely loved it. I became an Eagle Scout in 2012, and then became Senior Patrol Leader of Troop 26 a
-                                    year and a half later. Under my leadership, we went to Summer Camp, the National Jamboree, Sea Base High Adventure camp, and did a float trip down the Illinois river. Interestingly, on all four of these trips, there was
-                                    substantial rain. Enough rain that I stopped caring about getting wet.
+                                    Once I graduated to Boy Scouts, I went to BSA Troop 26, one of the largest Boy Scout troops in the United States. I quickly found that I loved it. Absolutely loved it. I became an Eagle Scout in 2012, and then became Senior Patrol Leader of Troop 26 a year and a half later. Under my leadership, we went to Summer Camp, the National Jamboree, Sea Base High Adventure camp, and did a float trip down the Illinois river. Interestingly, on all four of these trips, there was substantial rain. Enough rain that I stopped caring about getting wet.
                                 </p>
                                 <p>
-                                    While Troop 26 is a wonderful troop in its own right, I give most of the credit for its size and magnificence to its Scoutmaster, Bill Shaffer. Bill has been the scoutmaster for over 40 years, and is an integral part of why Troop 26 is as successful as
-                                    it is today. I personally owe him a great deal, as he has given me much of my work ethic and common sense.
+                                    While Troop 26 is a wonderful troop in its own right, I give most of the credit for its size and magnificence to its Scoutmaster, Bill Shaffer. Bill has been the scoutmaster for over 40 years, and is an integral part of why Troop 26 is as successful as it is today. I personally owe him a great deal, as he has given me much of my work ethic and common sense.
                                 </p>
                             </div>
                             <h2>Hacking</h2>
                             <p>
-                                I absolutely <em>love</em> to hack. Probably not the "hack" you're thinking of. My definition of "hack" means to simply work on a personal software and/or hardware project. All of my GitHub repositories arose from my "hacking."
-                                Which one's my favorite? Good question. As of this writing, I'd probably have to say <em>Sudoku Online</em>. It's my most successful project, and it's actually used. By the same token, however, shouldn't <em>MealPlanner</em> be my favorite? Hmmmm...
+                                I absolutely <em>love</em> to hack. Probably not the "hack" you're thinking of. My definition of "hack" means to simply work on a personal software and/or hardware project. All of my GitHub repositories arose from my "hacking." Which one's my favorite? Good question. As of this writing, I'd probably have to say <em>Sudoku Online</em>. It's my most successful project, and it's actually used. By the same token, however, shouldn't <em>MealPlanner</em> be my favorite? Hmmmm...
                             </p>
                             <p>
                                 Regardless of what my favorite project is, I think it has become evident that I like to code. I impore you to look below and view my various projects; I really am proud of them all!
@@ -365,6 +380,16 @@
                                         </a>
                                     </div>
                                 </div>
+                                <div class="row travel-row">
+                                    <div class="col-md-8 col-xs-12 col-md-offset-2 travel-entry">
+                                        <a href="https://alexhrao.github.io/TravelPlans/trips/15/Summary.html">
+                                            <img src="./resources/images/travels/studyAbroad/15.jpg" alt="Cologne" class="img-rounded img-responsive travel-image" />
+                                            <div class="travel-caption">
+                                                <p class="travel-title">Cologne</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -381,8 +406,7 @@
                     <p>
                         You don't have to look far to see that I <em>LOVE</em> software. My GitHub repositories (which includes this site, by the way...), and my biography repeatedly hints at my software leanings. But it's more than that. It's software that
                         can serve. Software with a purpose. I'm passionate about making software that can change people's lives for the better. Now, many of you are thinking "Oh, he's just a kid that wants to change the world. Just like everyone else." While
-                        I would like to change how this world works, my goal is a bit more... reasonable. <em>Improvements</em> are where I think I can actually make substantial impact. Making applications easier to use and available to a broader audience.
-                        Making sure that websites are reasonable, and apps that allow users to make decisions faster. This is where I think I can truly make a difference.
+                        I would like to change how this world works, my goal is a bit more... reasonable. <em>Improvements</em> are where I think I can actually make substantial impact. Making applications easier to use and available to a broader audience.         Making sure that websites are reasonable, and apps that allow users to make decisions faster. This is where I think I can truly make a difference.
                     </p>
                 </div>
                 <div class="col-md-6 text-center">
@@ -444,8 +468,7 @@
                     </a>
                     <div id="thg" class="collapse fade">
                         <p>
-                            At THG, I was responsible for studying possible connections between price of energy and carbon dioxide emissions. I used MATLAB&reg; and Excel&reg; to analyze the huge amounts of data; in particular, I used the Parallel Computing Toolbox and Publishing
-                            to complete the project in a timely manner.
+                            At THG, I was responsible for studying possible connections between price of energy and carbon dioxide emissions. I used MATLAB&reg; and Excel&reg; to analyze the huge amounts of data; in particular, I used the Parallel Computing Toolbox and Publishing to complete the project in a timely manner.
                         </p>
                     </div>
                 </div>
@@ -457,8 +480,7 @@
                     </a>
                     <div id="georgiaTech" class="collapse fade">
                         <p>
-                            I'm a Teaching Assistant for CS 1371 <em>(MATLAB&reg;)</em> at the Georgia Institute of Technology. Here, I'm responsible for teaching students the basics of MATLAB&reg; and programming, and how computers can help solve complex
-                            problems. Additionally, I'm also responsible for the autograder, which is software that automatically runs and grades student submissions.
+                            I'm a Teaching Assistant for CS 1371 <em>(MATLAB&reg;)</em> at the Georgia Institute of Technology. Here, I'm responsible for teaching students the basics of MATLAB&reg; and programming, and how computers can help solve complex problems. Additionally, I'm also responsible for the autograder, which is software that automatically runs and grades student submissions.
                         </p>
                     </div>
                 </div>
@@ -468,8 +490,7 @@
                     </a>
                     <div id="experianHealth" class="collapse fade">
                         <p>
-                            At Experian&trade; Health, I was responsible for managing the client-facing, Tableau&reg;-based healthcare dashboard system. The system allows users to monitor patients and billing. Using the Tableau&reg; Python API, I automated the user sign up process,
-                            saving ~3 hours per week and reducing errors to zero.
+                            At Experian&trade; Health, I was responsible for managing the client-facing, Tableau&reg;-based healthcare dashboard system. The system allows users to monitor patients and billing. Using the Tableau&reg; Python API, I automated the user sign up process, saving ~3 hours per week and reducing errors to zero.
                         </p>
                     </div>
                 </div>
@@ -501,8 +522,7 @@
                                     Give clear directives
                                     <ul>
                                         <li class="list-item">
-                                            I also learned that delegation is important. If nobody has a specific problem to solve, it's unlikely anyone will solve anything. Indeed, without direction, nobody even knows <em>what</em> to solve. Giving clear
-                                            orders is a must in any team.
+                                            I also learned that delegation is important. If nobody has a specific problem to solve, it's unlikely anyone will solve anything. Indeed, without direction, nobody even knows <em>what</em> to solve. Giving clear orders is a must in any team.
                                         </li>
                                     </ul>
                                 </li>
@@ -510,8 +530,7 @@
                                     Planning makes a <em><strong>huge</strong></em> difference
                                     <ul>
                                         <li class="list-item">
-                                            Planning out a journey before you make the journey is a no-brainer. How else would you know where to go, who to meet up with, or what to do? Well, like trips, work <strong>must</strong> be planned prior to being
-                                            done.
+                                            Planning out a journey before you make the journey is a no-brainer. How else would you know where to go, who to meet up with, or what to do? Well, like trips, work <strong>must</strong> be planned prior to being done.
                                         </li>
                                     </ul>
                                 </li>
@@ -543,8 +562,7 @@
                                 </li>
                             </ul>
                             <p>
-                                Still, I learned a few things. For starters, I learned that there's no shame in not creating something in-house. Using tools from others is a sign of wisdom, not weakness. I also learned that being honest about meeting deadlines was better than putting
-                                it off. It's better to promise less and then deliver more than the other way around!
+                                Still, I learned a few things. For starters, I learned that there's no shame in not creating something in-house. Using tools from others is a sign of wisdom, not weakness. I also learned that being honest about meeting deadlines was better than putting it off. It's better to promise less and then deliver more than the other way around!
                             </p>
                         </div>
                     </div>
@@ -557,8 +575,7 @@
                     </a>
                     <div id="stinnettAssociates" class="collapse fade">
                         <p>
-                            At Stinnett &amp; Associates, LLC, I was primarily responsible for creating and maintaining VBA applications for the company, particularly applications within Microsoft Excel. I created an Inventory Tracker, which would alert users when to order more
-                            supplies so that existing events would be properly staffed. Furthermore, I also created an Outlook app that would read the content of an applicant's email, and then place salient information into a companion Excel workbook.
+                            At Stinnett &amp; Associates, LLC, I was primarily responsible for creating and maintaining VBA applications for the company, particularly applications within Microsoft Excel. I created an Inventory Tracker, which would alert users when to order more supplies so that existing events would be properly staffed. Furthermore, I also created an Outlook app that would read the content of an applicant's email, and then place salient information into a companion Excel workbook.
                         </p>
                     </div>
                 </div>
@@ -578,16 +595,13 @@
                     </a>
                     <div id="tulsaUniversity" class="collapse fade">
                         <p>
-                            At the University of Tulsa, I interned as an assistant researcher in Mechanical, Chemical, and Electrical Engineering. Specifically, we were testing the strengths of different epoxies, which were utilized in fixing fissures in underwater oil pipelines.
-                            I worked under TU professor Dr. Michael Keller and Graduate Student Chris Burnworth, both of whom were experts in their respective fields.
+                            At the University of Tulsa, I interned as an assistant researcher in Mechanical, Chemical, and Electrical Engineering. Specifically, we were testing the strengths of different epoxies, which were utilized in fixing fissures in underwater oil pipelines. I worked under TU professor Dr. Michael Keller and Graduate Student Chris Burnworth, both of whom were experts in their respective fields.
                         </p>
                         <p>
                             Specifically, we made 60 pipes with fabricated deficiencies, and then saw how much pressure was required to blow the pipe. Then, after fixing this hole with epoxy, we'd see how much pressure the pipe could take before bursting again.
                         </p>
                         <p>
-                            Additionally, we also made extraordinarily thin plates out of the same epoxy. Using paint-on electrical wiring, I drew across the plate and connected the paint to a wire, which led to NI equipment connected to a LabVIEW-equipped computer. Using LabVIEW,
-                            I then created an experiment which logged measured resistance across the line, subtracting out the resistance of the wire. Then, a constantly increasing stretching force was applied to the plate, until the plate broke. Since the
-                            resistance would increase dramatically as soon as the plate broke, reading this resistance was integral in figuring out <em>exactly</em> how strong the plate was.
+                            Additionally, we also made extraordinarily thin plates out of the same epoxy. Using paint-on electrical wiring, I drew across the plate and connected the paint to a wire, which led to NI equipment connected to a LabVIEW-equipped computer. Using LabVIEW, I then created an experiment which logged measured resistance across the line, subtracting out the resistance of the wire. Then, a constantly increasing stretching force was applied to the plate, until the plate broke. Since the resistance would increase dramatically as soon as the plate broke, reading this resistance was integral in figuring out <em>exactly</em> how strong the plate was.
                         </p>
                     </div>
                 </div>
@@ -658,12 +672,10 @@
                                     <li>Has native binaries for Windows and macOS</li>
                                 </ul>
                                 <p>
-                                    Sudoku Online was a labor of love. It was originally made so that a certain young lady and I could keep in touch while I studied abroad, but I'm happy to report that it's been used even outside of this context. This project was born out a "I wonder if
-                                    this is even possible..." thought. I have, of course, since found out that <em>it is indeed possible</em>.
+                                    Sudoku Online was a labor of love. It was originally made so that a certain young lady and I could keep in touch while I studied abroad, but I'm happy to report that it's been used even outside of this context. This project was born out a "I wonder if this is even possible..." thought. I have, of course, since found out that <em>it is indeed possible</em>.
                                 </p>
                                 <p>
-                                    Writing this application actually taught me quite a bit about the Java Programming Language and how modern networking works. Ideas like sockets, servers, and streams were introduced to me for the very first time. Multithreaded programming became second
-                                    nature. Overall, I actually learned more creating this than I learned in my classes!
+                                    Writing this application actually taught me quite a bit about the Java Programming Language and how modern networking works. Ideas like sockets, servers, and streams were introduced to me for the very first time. Multithreaded programming became second nature. Overall, I actually learned more creating this than I learned in my classes!
                                 </p>
                             </div>
                         </div>
@@ -673,8 +685,7 @@
                                     <img id="mealPlannerLogo" class="img-responsive pull-left" src="resources/images/projects/mealPlannerLogo.png" data-toggle="tooltip" title="The icon for MealPlanner. Click to view" data-placement="auto top" />
                                 </a>
                                 <p>
-                                    MealPlanner was created out of a desire to electronically plan meals. Incidentally, it's actually actively used, but only by me. It's written in PHP&trade;. It allows users to create records for ingredients, recipes, and meals, and then schedule these
-                                    meals. It then allows users to view a calendar of their meals, and to get a shopping list of what they need to buy for a certain range of dates.
+                                    MealPlanner was created out of a desire to electronically plan meals. Incidentally, it's actually actively used, but only by me. It's written in PHP&trade;. It allows users to create records for ingredients, recipes, and meals, and then schedule these meals. It then allows users to view a calendar of their meals, and to get a shopping list of what they need to buy for a certain range of dates.
                                 </p>
                             </div>
                         </div>
@@ -691,15 +702,12 @@
                                 </h2>
                                 <div id="history" class="history collapse">
                                     <p>
-                                        SoluCheck was started from a desire to be lazy. For CS 1371 (A class which I now TA for), we have to create code that will, theoretically, solve a given problem for <em>any</em> starting conditions. These starting conditions
-                                        are given as inputs to MATLAB&reg; functions, or as external files (i.e., text files, image files, etc.).
+                                        SoluCheck was started from a desire to be lazy. For CS 1371 (A class which I now TA for), we have to create code that will, theoretically, solve a given problem for <em>any</em> starting conditions. These starting conditions are given as inputs to MATLAB&reg; functions, or as external files (i.e., text files, image files, etc.).
                                     </p>
                                     <div class="beginning">
                                         <h3>The Beginning</h3>
                                         <p>
-                                            Originally a command-line utility, it consisted of one function - Solver - that took in a function name (as a string), a "number of iterations" (how many times solver would test the function), and a variable number of arguments - arguments that specify
-                                            the starting argument and the "step size" for that argument. Basically, solver would increment the argument by its step size each successive iteration. This was clunky, to say the least, and for a large number of
-                                            arguments, would quickly go out of hand with number of arguments. Indeed, the first solver didn't even work!
+                                            Originally a command-line utility, it consisted of one function - Solver - that took in a function name (as a string), a "number of iterations" (how many times solver would test the function), and a variable number of arguments - arguments that specify the starting argument and the "step size" for that argument. Basically, solver would increment the argument by its step size each successive iteration. This was clunky, to say the least, and for a large number of arguments, would quickly go out of hand with number of arguments. Indeed, the first solver didn't even work!
                                         </p>
                                     </div>
                                     <div class="second">
@@ -718,8 +726,7 @@
                                         <img src="resources/images/projects/soluCheckGUI.png" class="img-responsive pull-left" />
                                         <h3>A GUI Rises</h3>
                                         <p>
-                                            This is it. The beginning of SoluCheck, SoluWare (The "parent company" responsible for SoluCheck - I had my head in the clouds). The world's first (and still only!) GUI that will programmatically check homework for a variety of test cases. Mind you, there
-                                            are still some problems. The business logic and presentation logic are still combined - not good for any product, and there are still a variety of arguments not testable. But it's a start.
+                                            This is it. The beginning of SoluCheck, SoluWare (The "parent company" responsible for SoluCheck - I had my head in the clouds). The world's first (and still only!) GUI that will programmatically check homework for a variety of test cases. Mind you, there are still some problems. The business logic and presentation logic are still combined - not good for any product, and there are still a variety of arguments not testable. But it's a start.
                                         </p>
                                     </div>
                                 </div>
@@ -797,8 +804,7 @@
                                                     <h3><span class="glyphicon glyphicon-import"></span></h3>
                                                     <h4>Loading &amp; Custom arguments</h4>
                                                     <p class="thin">
-                                                        Need to fine-tune your input arguments? Simply create custom input scripts that output the new input argument and run in a sandboxed state. Need to include variables, but don't want their value to be overwritten? Just load a custom .MAT file using the
-                                                        Variable Loader.
+                                                        Need to fine-tune your input arguments? Simply create custom input scripts that output the new input argument and run in a sandboxed state. Need to include variables, but don't want their value to be overwritten? Just load a custom .MAT file using the Variable Loader.
                                                     </p>
                                                 </div>
                                                 <div class="text-center col-sm-4">
@@ -831,12 +837,10 @@
                             </div>
                             <div class="col-xs-12">
                                 <p>
-                                    Like Sudoku Online, this one was born out of a simple thought - "I wonder if this is possible..." I was studying Chess algorithms, and I realized that it was possible for a computer to track moves. At the time, the only real "programming language" I knew
-                                    was MATLAB&reg;, so I got to work, and wrote the first Chess Player for MATLAB.
+                                    Like Sudoku Online, this one was born out of a simple thought - "I wonder if this is possible..." I was studying Chess algorithms, and I realized that it was possible for a computer to track moves. At the time, the only real "programming language" I knew was MATLAB&reg;, so I got to work, and wrote the first Chess Player for MATLAB.
                                 </p>
                                 <p>
-                                    Supported wherever MATLAB GUIs are supported, the app will track player moves and keep a log of them, which can be docked or free-floating. It also ensures that checkmate is valid, and won't let the player put his or her King into harm's way. The game
-                                    highlights squares that are valid moves, albeit using an inefficient algorithm. But at the end of the day, it <em>works</em>, and it taught me a good bit about MATLAB&reg;.
+                                    Supported wherever MATLAB GUIs are supported, the app will track player moves and keep a log of them, which can be docked or free-floating. It also ensures that checkmate is valid, and won't let the player put his or her King into harm's way. The game highlights squares that are valid moves, albeit using an inefficient algorithm. But at the end of the day, it <em>works</em>, and it taught me a good bit about MATLAB&reg;.
                                 </p>
                             </div>
                         </div>
