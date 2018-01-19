@@ -288,11 +288,13 @@ a:hover,
     text-shadow: 1px 1px 25px black !important;
 }
 .projects p,
-.projects li,
-.projects h1 {
-    color: white;
-}
-.projects h5 {
+.projects h1,
+.projects h2,
+.projects h3,
+.projects h4,
+.projects h5,
+.projects h6,
+.projects li {
     color: white;
 }
 .projects .nav-pills > li > a {
