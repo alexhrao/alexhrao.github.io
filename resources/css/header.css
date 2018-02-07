@@ -81,7 +81,7 @@ footer {
 .header {
     padding-top: 105px;
     padding-bottom: 70px;
-    background-color: #3E59BD;
+    background: linear-gradient(141deg, #5f2c82, #49a09d);
     border: 0px;
 }
 .header h1 {
@@ -99,20 +99,7 @@ footer {
 .normalized {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.about {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #157D2C;
-    color: white;
-}
-.passions {
-    background-color: #3E59BD;
-}
-.professional {
-    background-color: #FFF458;
-}
-.projects {
-    background-color: #157D2C;
-}
+
 .social {
     background-color: #222;
 }
@@ -157,6 +144,20 @@ footer {
 }
 
 /* ID: */
+#about {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #c04848, #480048);
+    color: white;
+}
+#passions {
+    background: linear-gradient(80deg, #24c6dc, #514a9d);
+}
+#professional {
+    background: linear-gradient(40deg, #f7ff00, #db36a4);
+}
+#projects {
+	background: linear-gradient(to bottom, #283c86, #45a247);
+}
 #beginning {
     position: fixed;
     width: 100%;
@@ -206,9 +207,6 @@ a:hover,
 .navbar-right a {
     cursor: pointer;
 }
-.about ul {
-    background-color: #157D2C;
-}
 .about li > a {
     background-color: #232222;
     color: white;
@@ -219,8 +217,7 @@ a:hover,
 .about li.active > a:focus,
 .about li.active > a:hover,
 .about li > a:hover {
-    background-color: #157D2C;
-    color: white;
+    color: black;
     text-decoration: underline;
 }
 .about li > a::selection {
