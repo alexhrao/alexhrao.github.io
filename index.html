@@ -7,7 +7,6 @@
         <title>My Personal Website</title>
         <link rel="shortcut icon" type="application/ico" href="resources/images/branding/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" />
         <link rel="stylesheet" type="text/css" href="resources/css/header.css" />
@@ -17,6 +16,7 @@
         <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+        <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" defer></script>
         <script type="text/javascript" src="resources/scripts/onReady.js"></script>
     </head>
     <body>
@@ -25,10 +25,8 @@
             <div class="container-fluid navbar-inverse">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                        <i class="fas fa-bars"></i>
+                    </button>
                     <a id="logo" href="https://www.github.com/alexhrao" class="navbar-left">
                         &nbsp;
                         <img id="logoImage" class="img-circle" src="resources/images/branding/logo.png" height="50px" />
@@ -40,46 +38,46 @@
                 <div id="menuBar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav visible-xs">
                         <li>
-                            <a href="#aboutMe" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-user"></span> About Me</a>
+                            <a href="#aboutMe" data-toggle="collapse" data-target="#menuBar"><i class="far fa-user-circle"></i> About Me</a>
                         </li>
                         <li>
-                            <a href="#passions" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-fire"></span> Passions</a>
+                            <a href="#passions" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-fire"></i> Passions</a>
                         </li>
                         <li>
-                            <a href="#professional" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a>
+                            <a href="#professional" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-briefcase"></i> Professional Experience</a>
                         </li>
                         <li>
-                            <a href="#projects" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-tasks"></span> Projects</a>
+                            <a href="#projects" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-code-branch"></i> Projects</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav hidden-xs">
                         <li>
-                            <a href="#aboutMe"><span class="glyphicon glyphicon-user"></span> About Me</a>
+                            <a href="#aboutMe" data-toggle="collapse" data-target="#menuBar"><i class="far fa-user-circle"></i> About Me</a>
                         </li>
                         <li>
-                            <a href="#passions"><span class="glyphicon glyphicon-fire"></span> Passions</a>
+                            <a href="#passions" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-fire"></i> Passions</a>
                         </li>
                         <li>
-                            <a href="#professional"><span class="glyphicon glyphicon-briefcase"></span> Professional Experience</a>
+                            <a href="#professional" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-briefcase"></i> Professional Experience</a>
                         </li>
                         <li>
-                            <a href="#projects"><span class="glyphicon glyphicon-tasks"></span> Projects</a>
+                            <a href="#projects" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-code-branch"></i> Projects</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right visible-xs">
                         <li>
-                            <a data-toggle="modal" data-target="#contact"><span class="glyphicon glyphicon-inbox"></span> Contact</a>
+                            <a data-toggle="modal" data-target="#contact"><i class="fas fa-comment"></i> Contact</a>
                         </li>
                         <li>
-                            <a href="#social" data-toggle="collapse" data-target="#menuBar"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a>
+                            <a href="#social" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-thumbs-up"></i> Connect</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right hidden-xs">
                         <li>
-                            <a data-toggle="modal" data-target="#contact"><span class="glyphicon glyphicon-inbox"></span> Contact</a>
+                            <a data-toggle="modal" data-target="#contact"><i class="fas fa-comment"></i> Contact</a>
                         </li>
                         <li>
-                            <a href="#social"><span class="glyphicon glyphicon-thumbs-up"></span> Social</a>
+                            <a href="#social" data-toggle="collapse" data-target="#menuBar"><i class="fas fa-thumbs-up"></i> Connect</a>
                         </li>
                     </ul>
                 </div>
@@ -123,7 +121,9 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                        <button id="sendMessage" type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button id="sendMessage" type="submit" class="btn btn-primary" data-dismiss="modal">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,8 @@
                 <h1 class="text-center head">Yours Truly</h1>
                 <div class="col-lg-12">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#intro">Me</a>
+                        <li class="active">
+                            <a data-toggle="tab" href="#intro">Me</a>
                         </li>
                         <li>
                             <a data-toggle="tab" href="#education">Education</a>
@@ -390,7 +391,7 @@
             <div class="row passions content">
                 <h1 class="text-center head">Passions</h1>
                 <div class="col-md-6 text-center">
-                    <span style="font-size:2.5em" class="glyphicon glyphicon-hdd"></span>
+                    <i class="fas fa-terminal"></i>
                     <h2>Software Engineering</h2>
                     <p>
                         You don't have to look far to see that I <em>LOVE</em> software. My GitHub repositories (which includes this site, by the way...), and my biography repeatedly hints at my software leanings. But it's more than that. It's software that
@@ -399,7 +400,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 text-center">
-                    <span style="font-size:2.5em" class="glyphicon glyphicon-cloud"></span>
+                    <i class="fas fa-cloud"></i>
                     <h2>Embedded Systems &amp; IoT</h2>
                     <p>
                         This is more... recent than anything else. I've always loved the <em>thought</em> of learning hardware - only recently have I actually been able to do so. Most of my work with embedded systems have been with the <a href="https://developer.mbed.org/users/alexhrao/">MBED</a>                    class of systems. These are small devices based on ARM architecture. With this, I've been moving closer and closer to developing for the <em>Internet of Things</em>, or <em>IOT</em>. Making a simple MBED program that can flip a switch,
@@ -744,21 +745,21 @@
                                         <div class="advanced">
                                             <div class="row content">
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-envelope"></span></h3>
+                                                    <h3><i class="far fa-envelope"></i></h3>
                                                     <h4>Notifications</h4>
                                                     <p class="thin">
                                                         Need to head out? Have SoluCheck email you the results of your test, viewable from anywhere .mat files are supported!
                                                     </p>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-signal"></span></h3>
+                                                    <h3><i class="fas fa-signal"></i></h3>
                                                     <h4>Performance</h4>
                                                     <p class="thin">
                                                         Does your code run slowly? Or quickly? See how it stacks up against the solution file with timing and code performance analysis. See exactly what's slowing you down, and graph timing information over the entire set of iterations.
                                                     </p>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-check"></span></h3>
+                                                    <h3><i class="fas fa-tasks"></i></h3>
                                                     <h4>Auditing</h4>
                                                     <p class="thin">
                                                         Don't believe the solution code is right? Audit instead, and see how many times your function agrees with the solution, and, for where they differ, know how and why, with input and output information.
@@ -767,21 +768,21 @@
                                             </div>
                                             <div class="text-center row content">
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-file"></span></h3>
+                                                    <h3><i class="fas fa-file-alt"></i></h3>
                                                     <h4>Files</h4>
                                                     <p class="thin">
                                                         Need to test contents of text files? Use the File Comparison Tool to automatically include files as outputs.
                                                     </p>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-picture"></span></h3>
+                                                    <h3><i class="fas fa-file-image"></i></h3>
                                                     <h4>Images</h4>
                                                     <p class="thin">
                                                         Do you need to check images? Use the Image Comparison Tool, which has built-in tolerance that has been verified as identical to that of the autograder.
                                                     </p>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="fa fa-area-chart"></span></h3>
+                                                    <h3><i class="fas fa-chart-line"></i></h3>
                                                     <h4>Plots</h4>
                                                     <p class="thin">
                                                         Need to check plot outputs? SoluCheck's Plot Compare Tool will inform you of the average "plot difference" (% difference between plots).
@@ -790,14 +791,14 @@
                                             </div>
                                             <div class="row content">
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-import"></span></h3>
+                                                    <h3><i class="fas fa-download"></i></h3>
                                                     <h4>Loading &amp; Custom arguments</h4>
                                                     <p class="thin">
                                                         Need to fine-tune your input arguments? Simply create custom input scripts that output the new input argument and run in a sandboxed state. Need to include variables, but don't want their value to be overwritten? Just load a custom .MAT file using the Variable Loader.
                                                     </p>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="glyphicon glyphicon-transfer"></span></h3>
+                                                    <h3><i class="fas fa-exchange-alt"></i></h3>
                                                     <h4>Variable I/O</h4>
                                                     <p class="thin">
                                                         Does your function support
@@ -806,7 +807,7 @@
                                                     </p>
                                                 </div>
                                                 <div class="text-center col-sm-4">
-                                                    <h3><span class="fa fa-database"></span></h3>
+                                                    <h3><span class="fas fa-database"></span></h3>
                                                     <h4>Automation</h4>
                                                     <p class="thin">
                                                         Have a database of tests you'd like to perform? Import them with the Automation module of SoluCheck.
@@ -898,21 +899,22 @@
         <div id="social" class="container-fluid">
             <div class="row social content text-center">
                 <div class="social-icons">
-                    <a href="https://bitbucket.org/alexhrao/"><i data-toggle="tooltip" title="BitBucket" data-placement="auto top" class="fa fa-bitbucket-square" style="color:#205081"></i></a>
-                    <a href="https://www.facebook.com/alex.rao.731"><i data-toggle="tooltip" title="Facebook" data-placement="auto top" class="fa fa-facebook-square" style="color:#3b5998"></i></a>
-                    <a href="https://www.github.com/alexhrao"><i data-toggle="tooltip" title="GitHub" data-placement="auto top" class="fa fa-github" style="color:#ffffff"></i></a>
-                    <a href="https://plus.google.com/115896805519361126811"><i data-toggle="tooltip" title="Google+" data-placement="auto top" class="fa fa-google-plus-square" style="color:#dd4b39"></i></a>
-                    <a href="https://www.instagram.com/alexhrao/"><i data-toggle="tooltip" title="Instagram" data-placement="auto top" class="fa fa-instagram" style="color: #8a3ab9"></i></a>
-                    <a href="https://www.linkedin.com/in/alexander-rao-93b252104"><i data-toggle="tooltip" title="LinkedIn" data-placement="auto top" class="fa fa-linkedin-square" style="color:#007bb6"></i></a>
-                    <a href="https://www.pinterest.com/arodponyboy678"><i data-toggle="tooltip" title="Pinterest" data-placement="auto top" class="fa fa-pinterest-square" style="color: #cb2027"></i></a>
-                    <a href="https://www.quora.com/profile/Alexander-Rao"><i data-toggle="tooltip" title="Quora" data-placement="auto top" class="fa fa-quora" style="font-size: 41px; color:#a82400"></i></a>
-                    <a href="https://www.reddit.com/user/ArodPonyboy/"><i data-toggle="tooltip" title="Reddit" data-placement="auto top" class="fa fa-reddit-square" style="color:#ff4500"></i></a>
-                    <a href="https://www.snapchat.com/add/alexhrao/"><i data-toggle="tooltip" title="SnapChat" data-placement="auto top" class="fa fa-snapchat-square" style="color: #fffc00"></i></a>
-                    <a href="https://arodponyboy678.tumblr.com"><i data-toggle="tooltip" title="Tumblr" data-placement="auto top" class="fa fa-tumblr-square" style="color: #32506d"></i></a>
-                    <a href="https://www.twitch.tv/arodponyboy678"><i data-toggle="tooltip" title="Twitch" data-placement="auto top" class="fa fa-twitch" style="font-size: 41px; color: #6441A4"></i></a>
-                    <a href="https://twitter.com/arodponyboy/"><i data-toggle="tooltip" title="Twitter" data-placement="auto top" class="fa fa-twitter-square" style="color:#4099FF"></i></a>
-                    <a href="https://account.xbox.com/en-US/Profile?gamerTag=ArodPonyboy678"><i data-toggle="tooltip" title="Xbox Live" data-placement="auto top" class="ion-xbox" style="font-size: 41px; color:#107c10"></i></a>
-                    <a href="https://www.youtube.com/channel/UCLsj-_lp-GVb7PZ1I671NsQ"><i data-toggle="tooltip" title="YouTube" data-placement="auto top" class="fa fa-youtube-play" style="font-size: 41px; color:#bb0000"></i></a>
+                    <a href="https://bitbucket.org/alexhrao/"><span data-toggle="tooltip" title="BitBucket" data-placement="auto top"><i class="fab fa-bitbucket" style="color:#205081"></i></span></a>
+                    <a href="https://www.facebook.com/alex.rao.731"><span data-toggle="tooltip" title="Facebook" data-placement="auto top"><i class="fab fa-facebook-square" style="color:#3b5998"></i></span></a>
+                    <a href="https://www.github.com/alexhrao"><span data-toggle="tooltip" title="GitHub" data-placement="auto top"><i class="fab fa-github" style="color:#ffffff"></i></span></a>
+                    <a href="https://plus.google.com/115896805519361126811"><span data-toggle="tooltip" title="Google+" data-placement="auto top"><i class="fab fa-google-plus-square" style="color:#dd4b39"></i></span></a>
+                    <a href="https://www.instagram.com/alexhrao/"><span data-toggle="tooltip" title="Instagram" data-placement="auto top"><i class="fab fa-instagram" style="color: #8a3ab9"></i></span></a>
+                    <a href="https://www.linkedin.com/in/alexhrao"><span data-toggle="tooltip" title="LinkedIn" data-placement="auto top"><i class="fab fa-linkedin" style="color:#007bb6"></i></span></a>
+                    <a href="https://www.pinterest.com/arodponyboy678"><span data-toggle="tooltip" title="Pinterest" data-placement="auto top"><i class="fab fa-pinterest-square" style="color: #cb2027"></i></span></a>
+                    <a href="https://www.playstation.com"><span data-toggle="tooltip" title="Playstation" data-placement="auto top"><i class="fab fa-playstation" style="color:#003791"></i></span></a>
+                    <a href="https://www.quora.com/profile/Alexander-Rao"><span data-toggle="tooltip" title="Quora" data-placement="auto top"><i class="fab fa-quora" style="color:#a82400"></i></span></a>
+                    <a href="https://www.reddit.com/user/ArodPonyboy/"><span data-toggle="tooltip" title="Reddit" data-placement="auto top"><i class="fab fa-reddit-square" style="color:#ff4500"></i></span></a>
+                    <a href="https://www.snapchat.com/add/alexhrao/"><span data-toggle="tooltip" title="SnapChat" data-placement="auto top"><i class="fab fa-snapchat-square" style="color: #fffc00"></i></span></a>
+                    <a href="https://arodponyboy678.tumblr.com"><span data-toggle="tooltip" title="Tumblr" data-placement="top"><i class="fab fa-tumblr-square" style="color: #32506d"></i></span></a>
+                    <a href="https://www.twitch.tv/arodponyboy678"><span data-toggle="tooltip" title="Twitch" data-placement="auto top"><i class="fab fa-twitch" style="color: #6441A4"></i></span></a>
+                    <a href="https://twitter.com/arodponyboy/"><span data-toggle="tooltip" title="Twitter" data-placement="auto top"><i class="fab fa-twitter-square" style="color:#4099FF"></i></span></a>
+                    <a href="https://account.xbox.com/en-US/Profile?gamerTag=ArodPonyboy678"><span data-toggle="tooltip" title="Xbox Live" data-placement="auto top"><i class="fab fa-xbox" style="color:#107c10"></i></span></a>
+                    <a href="https://www.youtube.com/channel/UCLsj-_lp-GVb7PZ1I671NsQ"><span data-toggle="tooltip" title="YouTube" data-placement="auto top"><i class="fab fa-youtube" style="color:#bb0000"></i></span></a>
                 </div>
             </div>
         </div>
