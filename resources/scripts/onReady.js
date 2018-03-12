@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('#logoImage').show();
     emailjs.init("user_F0kE6IBMQ9Lm6OLpQRxDf")
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();

@@ -1,5 +1,5 @@
 /* Media: */
-@media (min-width: 768px) and (max-width: 865px) {
+@media (min-width: 768px) and (max-width: 975px) {
     .navbar-header {
         float: none;
     }
@@ -188,6 +188,7 @@ footer {
 }
 #logoName {
     display: none;
+
 }
 #imgScouts {
     max-width: 15%;
@@ -216,8 +217,7 @@ footer {
 h1:hover,
 h2:hover,
 h3:hover,
-a:hover,
-.glyphicon:hover {
+a:hover {
     text-shadow: 1px 1px 25px white;
 }
 .navbar-right a {
