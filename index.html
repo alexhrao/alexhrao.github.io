@@ -15,7 +15,7 @@
         <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-        <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" defer></script>
+        <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" defer></script>
         <script type="text/javascript" src="resources/scripts/onReady.js"></script>
     </head>
     <body>
@@ -604,6 +604,11 @@
                     <div class="text-center">
                         <ul class="nav nav-pills nav-stacked">
                             <li class="active">
+                                <a data-toggle="pill" href="#autograder">
+                                    <p>Autograder</p>
+                                </a>
+                            </li>
+                            <li>
                                 <a data-toggle="pill" href="#sudokuOnline">
                                     <p>Sudoku Online</p>
                                 </a>
@@ -639,7 +644,80 @@
                 <div class="col-sm-9">
                     <!-- Project Information -->
                     <div class="tab-content">
-                        <div id="sudokuOnline" class="tab-pane fade in active">
+                        <div id="autograder" class="tab-pane fade in active">
+                            <div class="text-center">
+                                <a href="https://alexhrao.github.io/Sudoku/">
+                                    <img id="autograderLogo" src="resources/images/projects/autograder.png" data-toggle="tooltip" title="The logo for the Autograder. Click to view the Documentation" data-placement="auto top" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="col-xs-12">
+                                <p class="thin">
+                                    The Autograder is a stable, performant automatated grader for CS 1371 Homework Submissions
+                                </p>
+                                <div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-user-graduate"></i> Grading</h3>
+                                            <p>Use efficient grading techniques to automatically grade an entire homework assignment for any number of students. Grade outputs, plots, files, recursion, and more</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="far fa-bell"></i> Notifications</h3>
+                                            <p>
+                                                The Autograder can send you rich, interactive notifications via email, text, or Slack.
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-signal"></i> Performance &amp; Efficiency</h3>
+                                            <p>Do you have a need for speed? The Autograder is a highly performant grader.</p>
+                                            <ul>
+                                                <li>The Parallel Pool means multiple tests can be run simultaneously</li>
+                                                <li>Cheat Detection can take as little as 10 minutes</li>
+                                                <li>Grading 1,000 students often finishes in less than an hour</li>
+                                                <li>Downloading via the Autograder is often faster than directly from Canvas</li>
+                                                <li>Enjoy native Java performance for "hot spots" like downloading and file diffs.</li>
+                                            </ul> 
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-box"></i> Sandboxing</h3>
+                                            <p>Nervous that another student's code could affect your grade? Don't be. With sandboxing built in, every single test case is run in a controlled, pristine environment</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-gavel"></i> Cheat Detection</h3>
+                                            <p>Integrated cheat detection means the entire course can be assessed for cheating in as little as 10 minutes. Results are organized by section, and each suspected cheater has their own control center, where the user can view suspect code side by side</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-download"></i> Downloading</h3>
+                                            <p>Via the Canvas and Google Drive APIs, the Autograder can automatically download solution files and student submissions, directly from the source. Often, this can be faster than using those tools directly</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-upload"></i> Uploading</h3>
+                                            <p>The Canvas API also allows the Autograder to automatically publish grades, upload feedback, and post an announcement to the course. The announcement is even formatted via Markdown, HTML, or plain text, and can be previewed before posting</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-user-edit"></i> Selectively Grade Submissions</h3>
+                                            <p>Do you only need to grade a few students? The Autograder allows the user to interactively select which students they want to grade. Need to edit a student submission? The Autograder can pause after downloading, to allow you to add updated student submissions, if required.</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-clock"></i> Schedule the Autograder</h3>
+                                            <p>Want to grade as soon as you can, but don't want to stay up until midnight? Schedule the Autograder and relax. You can even continue to use MATLAB until midnight. Scheduling also does sanity checks to make sure the solution is up to snuff.</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="far fa-times-circle"></i> Banned &amp; Recursion Checking</h3>
+                                            <p>Static banned function checking means a 0% performance hit due to banned or recursive function checking</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="far fa-envelope"></i> Email Student Feedback</h3>
+                                            <p>Need to email students their feedback directly? Integrated Gmail services means rich emails can be sent to each student. Feedback is linked, not attached, for simple redaction if necessary</p>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <h3><i class="fas fa-bug"></i> Debugging</h3>
+                                            <p>Did something not work out quite right? Integrated debugging features means you'll never lose work because of an error. Upon breaking, you'll be placed in an interactive environment to test functionality, evaluate state, and even choose to continue grading</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sudokuOnline" class="tab-pane fade">
                             <div class="text-center">
                                 <a href="https://alexhrao.github.io/Sudoku/">
                                     <img id="sudokuOnlineLogo" src="resources/images/projects/sudokuOnline.png" data-toggle="tooltip" title="The icon for Sudoku Online. Click to view" data-placement="auto top" class="img-responsive" />
